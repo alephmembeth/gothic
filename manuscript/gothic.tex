@@ -1,0 +1,74 @@
+\documentclass[12pt]{scrbook}
+
+\usepackage{authblk}
+\usepackage[ngerman]{babel}
+\usepackage[natbib,authordate,backend=bibtex]{biblatex-chicago}
+   \bibliography{references}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[top=4cm,bottom=4cm,left=3cm,right=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+   \urlstyle{same}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{siunitx}
+\usepackage{tabto}
+\usepackage{tikz}
+
+\deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
+   \setlength{\skip\footins}{1.5em} 
+   \setlength{\footnotesep}{1em}
+
+\NumTabs{14}
+
+\title{Gothic}
+\subtitle{}
+
+\author{Alexander Max Bauer}
+
+\date{}
+
+
+%%%%%%%%%%%
+% TITELEI %
+%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% INHALTSVERZEICHNIS %
+%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+\tableofcontents
+
+
+%%%%%%%%%%%
+% VORWORT %
+%%%%%%%%%%%
+\chapter{Vorwort}
+
+
+%%%%%%%%%%%
+% ORPHEUS %
+%%%%%%%%%%%
+\mainmatter
+\chapter{Orpheus – Ein Gefängnis in Planung}
+
+
+%%%%%%%%%%%%
+% APPENDIX %
+%%%%%%%%%%%%
+\clearpage
+\appendix
+
+
+%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIE %
+%%%%%%%%%%%%%%%%
+\clearpage
+\printbibliography
+
+\end{document}
