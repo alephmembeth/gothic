@@ -1,5 +1,7 @@
 \documentclass[12pt]{scrbook}
 
+\usepackage[utf8]{inputenc}
+
 \usepackage{authblk}
 \usepackage[ngerman]{babel}
 \usepackage[natbib,notes,backend=bibtex]{biblatex-chicago}
@@ -7,13 +9,13 @@
    \renewcommand*{\nameyeardelim}{,}
    \renewcommand*{\multicitedelim}{\addcomma\space}
 \usepackage{booktabs}
+\usepackage{CormorantGaramond}
 \usepackage{csquotes}
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage[top=4cm,bottom=4cm,left=3cm,right=2.5cm]{geometry}
 \usepackage[hidelinks]{hyperref}
    \urlstyle{same}
-\usepackage[utf8]{inputenc}
 \usepackage{longtable}
 \usepackage{siunitx}
 \usepackage{tabto}
@@ -57,7 +59,7 @@
 % ORPHEUS %
 %%%%%%%%%%%
 \mainmatter
-\chapter{Orpheus – Ein Gefängnis in Planung}
+\chapter{Orpheus -- Ein Gefängnis in Planung}\label{ch:orpheus}
 Gothic hieß nicht immer Gothic.
 Der erste Name, den das Projekt trug, war Orpheus.
 Aus dieser frühen Phase ist eine Handvoll Dokumente erhalten, in denen Mike Hoge erste Ideen festgehalten hat, von denen es am Ende viele, wie wir sehen werden, auch in das fertige Spiel geschafft haben.
@@ -67,20 +69,37 @@ Sie lassen sich anhand einiger in ihnen enthaltener Überschriften grob gliedern
    \item \enquote{Aufträge}\autocite[S.~16--17]{orpheus_b_scribbles}
    \item \enquote{Der rote Faden}\autocite{orpheus_der_rote}
    \item \enquote{Der Werdegang eines SC's}\autocite{orpheus_der_werdegang}
-   \item \enquote{Orpheus – Bewegungen}\autocite{orpheus_bewegungen}
-   \item \enquote{Orpheus – History}\autocite[S.~2--3]{orpheus_b_scribbles}
-   \item \enquote{Orpheus – Interface}\autocite{orpheus_interface}
-   \item \enquote{Orpheus – Kreaturen}\autocite[S.~4]{orpheus_b_scribbles}
-   \item \enquote{Orpheus – Locations}\autocite[S.~5]{orpheus_b_scribbles}
-   \item \enquote{Orpheus – Spielwelt/Gildensystem}\autocite{orpheus_gildensystem}
-   \item \enquote{Orpheus – Spielwelt/Gildensystem V2}\autocite{orpheus_gildensystem_v2}
-   \item \enquote{Orpheus – Übersicht}\autocite[S.~11--14]{orpheus_b_scribbles}
+   \item \enquote{Orpheus -- Bewegungen}\autocite{orpheus_bewegungen}
+   \item \enquote{Orpheus -- History}\autocite[S.~2--3]{orpheus_b_scribbles}
+   \item \enquote{Orpheus -- Interface}\autocite{orpheus_interface}
+   \item \enquote{Orpheus -- Kreaturen}\autocite[S.~4]{orpheus_b_scribbles}
+   \item \enquote{Orpheus -- Locations}\autocite[S.~5]{orpheus_b_scribbles}
+   \item \enquote{Orpheus -- Spielwelt/Gildensystem}\autocite{orpheus_gildensystem}
+   \item \enquote{Orpheus -- Spielwelt/Gildensystem V2}\autocite{orpheus_gildensystem_v2}
+   \item \enquote{Orpheus -- Übersicht}\autocite[S.~11--14]{orpheus_b_scribbles}
    \item \enquote{Zusammenfassung zum Orpheus-Konzept}\autocite{orpheus_zusammenfassung}
 \end{itemize}
 
 \noindent Daneben gibt es noch einige lose Notizen\footnote{Diese finden sich in \autocite{orpheus_b_scribbles}.} sowie ein Dokument zur Kampfsteuerung,\autocite{orpheus_kampfsteuerung} das -- abgesehen von den Überschriften seiner einzelnen Abschnitte -- keinen eigenen Titel trägt.
 Die \enquote{Zusammenfassung zum Orpheus-Konzept} steht vermutlich nicht nur alphabetisch am Ende: Sie stellt das einzige nicht handschriftlich verfasste Schriftstück in der Sammlung dar und ist auf den 12. Dezember 1996 datiert.
 Die anderen Dokumente könnten dementsprechend etwas älter sein; der in ihnen enthaltene Entwurf einer Karte wird beispielsweise auf das Vorjahr, also 1995, geschätzt.\autocite{flosha_evolution}
+Im Folgenden werfen wir einen genaueren Blick auf diese Dokumente, die ich dafür der Übersichtlichkeit halber in thematische Gruppen gliedere.
+Den Anfang machen technische Überlegungen (\autoref{sec:orpheus_technik}), gefolgt von...
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% ORPHEUS – TECHNIK %
+%%%%%%%%%%%%%%%%%%%%%
+\section{Technik}\label{sec:orpheus_technik}
+Drei der oben genannten Dokumente befassen sich im weitesten Sinne mit technischen oder spielmechanischen Überlegungen: \enquote{Orpheus -- Interface}, \enquote{Orpheus -- Bewegungen} sowie die Notizen zur Kampfsteuerung.
+Auch in dem Konvolut \enquote{Orpheus. B -- Scribbles} finden sich ein paar relevante Stichpunkte.
+
+In \enquote{Orpheus -- Interface} sind einige grundlegende Designentscheidungen festgehalten.
+An oberster Stelle auf der ersten Seite begegnen uns drei nummerierte Stichpunkte: \enquote{Outside View Only}, \enquote{Tastatur Only (evtl Maus Inventory \& \enquote{Fernklick} Unterstützung)} sowie \enquote{Items = VOBs},\autocite[S.~1]{orpheus_interface} wobei \enquote{VOB} hier für \enquote{Virtuelles Objekt} steht.\footnote{Zur Rolle von VOBs bei Gothic vgl. \autocite{wiki_vob}.}
+Alle drei Punkte haben sich als für die Entwicklung von Gothic maßgeblich herausgestellt: Den Namenlosen Helden sehen wir immer aus der Third-Person-Perspektive, die Steuerung unterstützt zwar Mauseingabe, bleibt in der Hauptsache aber auf die Tastatur fokussiert, und alle Gegenstände, die wir in der Spielwelt finden können, sind in der Engine als virtuelle Objekte angelegt.
+
+Unter diesen drei wegweisenden Stichpunkten folgt eine von (a) bis (o) reichende Liste mit Dingen, die es im Spiel geben sollte: \enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{springen}, \enquote{Türen öffnen/Truhen öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.\autocite[S.~1]{orpheus_interface}
+Das meiste davon ist am Ende auch umgesetzt worden; nur bei vier Punkten -- \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken} und \enquote{Battle Mode} -- gibt es nennenswerte Abweichungen.
 
 
 %%%%%%%%%%%%
