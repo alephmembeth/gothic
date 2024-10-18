@@ -1,31 +1,35 @@
 \documentclass[12pt]{scrbook}
 
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
 \usepackage{authblk}
 \usepackage[ngerman]{babel}
 \usepackage[natbib,notes,backend=bibtex]{biblatex-chicago}
    \bibliography{references}
-   \renewcommand*{\nameyeardelim}{,}
-   \renewcommand*{\multicitedelim}{\addcomma\space}
 \usepackage{booktabs}
 \usepackage{CormorantGaramond}
-\usepackage{csquotes}
+\usepackage[german=guillemets]{csquotes}
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage[top=4cm,bottom=4cm,left=3cm,right=2.5cm]{geometry}
+\usepackage{graphicx}
+   \graphicspath{{figures/}}
 \usepackage[hidelinks]{hyperref}
    \urlstyle{same}
 \usepackage{longtable}
+\usepackage[all]{nowidow}
+\usepackage{soul}
 \usepackage{siunitx}
 \usepackage{tabto}
 \usepackage{tikz}
+\usepackage{url}
+
+\addtokomafont{disposition}{\rmfamily}
 
 \deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
    \setlength{\skip\footins}{1.5em} 
    \setlength{\footnotesep}{1em}
-
-\NumTabs{14}
 
 \title{Gothic}
 \subtitle{}
@@ -81,6 +85,7 @@ Sie lassen sich anhand einiger in ihnen enthaltener Überschriften grob gliedern
 \end{itemize}
 
 \noindent Daneben gibt es noch einige lose Notizen\footnote{Diese finden sich in \autocite{orpheus_b_scribbles}.} sowie ein Dokument zur Kampfsteuerung,\autocite{orpheus_kampfsteuerung} das -- abgesehen von den Überschriften seiner einzelnen Abschnitte -- keinen eigenen Titel trägt.
+
 Die \enquote{Zusammenfassung zum Orpheus-Konzept} steht vermutlich nicht nur alphabetisch am Ende: Sie stellt das einzige nicht handschriftlich verfasste Schriftstück in der Sammlung dar und ist auf den 12. Dezember 1996 datiert.
 Die anderen Dokumente könnten dementsprechend etwas älter sein; der in ihnen enthaltene Entwurf einer Karte wird beispielsweise auf das Vorjahr, also 1995, geschätzt.\autocite{flosha_evolution}
 Im Folgenden werfen wir einen genaueren Blick auf diese Dokumente, die ich dafür der Übersichtlichkeit halber in thematische Gruppen gliedere.
@@ -95,10 +100,10 @@ Drei der oben genannten Dokumente befassen sich im weitesten Sinne mit technisch
 Auch in dem Konvolut \enquote{Orpheus. B -- Scribbles} finden sich ein paar relevante Stichpunkte.
 
 In \enquote{Orpheus -- Interface} sind einige grundlegende Designentscheidungen festgehalten.
-An oberster Stelle auf der ersten Seite begegnen uns drei nummerierte Stichpunkte: \enquote{Outside View Only}, \enquote{Tastatur Only (evtl Maus Inventory \& \enquote{Fernklick} Unterstützung)} sowie \enquote{Items = VOBs},\autocite[S.~1]{orpheus_interface} wobei \enquote{VOB} hier für \enquote{Virtuelles Objekt} steht.\footnote{Zur Rolle von VOBs bei Gothic vgl. \autocite{wiki_vob}.}
+An oberster Stelle auf der ersten Seite begegnen uns drei nummerierte Stichpunkte: \enquote{\ul{Outside View Only}}, \enquote{\ul{Tastatur Only} (evtl Maus Inventory \& \enquote{\ul{Fernklick}} Unterstützung)} sowie \enquote{Items = VOBs},\autocite[S.~1]{orpheus_interface} wobei \enquote{VOB} hier für \enquote{Virtuelles Objekt} steht.\footnote{Zur Rolle von VOBs bei Gothic vgl. \autocite{wiki_vob}.}
 Alle drei Punkte haben sich als für die Entwicklung von Gothic maßgeblich herausgestellt: Den Namenlosen Helden sehen wir immer aus der Third-Person-Perspektive, die Steuerung unterstützt zwar Mauseingabe, bleibt in der Hauptsache aber auf die Tastatur fokussiert, und alle Gegenstände, die wir in der Spielwelt finden können, sind in der Engine als virtuelle Objekte angelegt.
 
-Unter diesen drei wegweisenden Stichpunkten folgt eine von (a) bis (o) reichende Liste mit Dingen, die es im Spiel geben sollte: \enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{springen}, \enquote{Türen öffnen/Truhen öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.\autocite[S.~1]{orpheus_interface}
+Unter diesen drei wegweisenden Stichpunkten folgt eine von (a) bis (p) reichende Liste mit Dingen, die es im Spiel geben sollte: \enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{Springen}, \enquote{Türen öffnen/Truhe öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.\autocite[S.~1]{orpheus_interface}
 Das meiste davon ist am Ende auch umgesetzt worden; nur bei vier Punkten -- \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken} und \enquote{Battle Mode} -- gibt es nennenswerte Abweichungen.
 
 
