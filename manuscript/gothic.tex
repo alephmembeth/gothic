@@ -21,10 +21,10 @@
    \urlstyle{same}
 \usepackage{longtable}
 \usepackage[all]{nowidow}
-\usepackage{soul}
 \usepackage{siunitx}
 \usepackage{tabto}
 \usepackage{tikz}
+\usepackage{ulem}
 \usepackage{url}
 
 \addtokomafont{disposition}{\rmfamily}
@@ -72,24 +72,25 @@ Aus dieser frühen Phase -- wir sprechen ungefähr von den Jahren 1995 und 1996 
 Sie lassen sich anhand einiger in ihnen enthaltener Titel grob gliedern:
 
 \begin{itemize}
-   \item \enquote{Aufträge}\autocite[S.~16--17]{orpheus_b_scribbles}
-   \item \enquote{Der rote Faden}\autocite{orpheus_der_rote}
-   \item \enquote{Der Werdegang eines SC's}\autocite{orpheus_der_werdegang}
-   \item \enquote{Orpheus -- Bewegungen}\autocite{orpheus_bewegungen}
+   \item \enquote{\uline{Aufträge}}\autocite[S.~16--17]{orpheus_b_scribbles}
+   \item \enquote{\uline{Der rote Faden}}\autocite{orpheus_der_rote}
+   \item \enquote{\uline{Der Werdegang eines SC's}}\autocite{orpheus_der_werdegang}
+   \item \enquote{\uline{Orpheus -- Bewegungen}}\autocite{orpheus_bewegungen}
    \item \enquote{Orpheus -- History}\autocite[S.~2--3]{orpheus_b_scribbles}
-   \item \enquote{Orpheus -- Interface}\autocite{orpheus_interface}
+   \item \enquote{\uline{Orpheus -- Interface}}\autocite{orpheus_interface}
    \item \enquote{Orpheus -- Kreaturen}\autocite[S.~4]{orpheus_b_scribbles}
    \item \enquote{Orpheus -- Locations}\autocite[S.~5]{orpheus_b_scribbles}
    \item \enquote{Orpheus -- Spielwelt/Gildensystem}\autocite{orpheus_gildensystem}
    \item \enquote{Orpheus -- Spielwelt/Gildensystem V2}\autocite{orpheus_gildensystem_v2}
-   \item \enquote{Orpheus -- Übersicht}\autocite[S.~11--14]{orpheus_b_scribbles}
-   \item \enquote{Zusammenfassung zum Orpheus-Konzept. Graphiken}\footnote{\autocite{orpheus_zusammenfassung}. Hierbei handelt es sich vermutlich um einen Teil einer ursprünglich umfangreicheren Zusammenfassung, von der nur der Abschnitt zur Grafik erhalten geblieben ist.}
+   \item \enquote{Orpheus -- \uline{Übersicht}}\autocite[S.~11--14]{orpheus_b_scribbles}
+   \item \enquote{Zusammenfassung zum Orpheus-Konzept. \uline{Graphiken}}\autocite{orpheus_zusammenfassung}
 \end{itemize}
 
 \noindent Daneben gibt es noch einige lose Notizen\footnote{Diese finden sich in \autocite{orpheus_b_scribbles}.} sowie ein Dokument zur Kampfsteuerung,\autocite{orpheus_kampfsteuerung} das -- abgesehen von den Überschriften seiner einzelnen Abschnitte -- keinen eigenen Titel trägt.
 
-Die \enquote{Zusammenfassung zum Orpheus-Konzept} steht vermutlich nicht nur alphabetisch am Ende:
-Sie stellt das einzige nicht handschriftlich verfasste Schriftstück in der Sammlung dar und ist auf den 12. Dezember 1996 datiert.
+Bei der \enquote{Zusammenfassung zum Orpheus-Konzept} handelt es sich vermutlich um ein ursprünglich umfangreicheres Dokument, von dem nur noch der Abschnitt zu \enquote{\uline{Graphiken}} erhalten geblieben ist.
+Es steht vermutlich nicht nur alphabetisch am Ende:
+Die Zusammenfassung stellt das einzige nicht handschriftlich verfasste Schriftstück in der Sammlung dar und ist auf den 12. Dezember 1996 datiert.
 Die anderen Dokumente könnten dementsprechend etwas älter sein; der in ihnen enthaltene Entwurf einer Karte wird beispielsweise auf das Vorjahr, also 1995, geschätzt.\autocite{flosha_evolution}
 
 Im Folgenden werfen wir einen genaueren Blick auf diese Dokumente, die ich dafür der Übersichtlichkeit halber in thematische Gruppen gliedere.
@@ -115,7 +116,8 @@ Ein Stichwort fällt dabei besonders ins Auge:
 An drei Stellen notiert Mike Hoge \enquote{Threaten \& Kill, Xena-Move}.\autocite[S.~2]{orpheus_bewegungen}
 Dabei bezieht er sich vermutlich auf die kampferprobte Protagonistin der zwischen 1995 und 2001 gedrehten Fernsehserie \textit{Xena -- Die Kriegerprinzessin}, wobei nicht klar ist, auf welchen ihrer \enquote{Moves} sich hier bezogen wird. % Mike Hoge fragen.
 
-Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein Abschnitt zu \enquote{\ul{Graphiken}} erhalten, der seinerseits unterteilt ist in \enquote{\ul{Spielansicht}}, \enquote{\ul{Spielfigurenanimation}}, \enquote{\ul{Getrennt animierte \textsc{gams}}}, \enquote{\ul{Diverse Mashes}} sowie \enquote{\ul{Texturen}}.
+Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein Abschnitt zu \enquote{\uline{Graphiken}} erhalten, der seinerseits unterteilt ist in \enquote{\uline{Spielansicht}}, \enquote{\uline{Spielfigurenanimation}}, \enquote{\uline{Getrennt animierte \textsc{gams}}}, \enquote{\uline{Diverse Mashes}} sowie \enquote{\uline{Texturen}}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ORPHEUS – SPIELMECHANIK UND STEUERUNG %
@@ -128,7 +130,7 @@ Anschließend werden wir uns der Steuerung widmen, bevor wir...
 
 In \enquote{Orpheus -- Interface} sind einige grundlegende Designentscheidungen festgehalten.
 An oberster Stelle auf der ersten Seite begegnen uns drei nummerierte Stichpunkte:
-\enquote{\ul{Outside View Only}}, \enquote{\ul{Tastatur Only} (evtl Maus Inventory \& \enquote{\ul{Fernklick}} Unterstützung)} sowie \enquote{Items = VOBs},\autocite[S.~1]{orpheus_interface} wobei \enquote{VOB} hier für \enquote{Virtuelles Objekt} steht.\footnote{Zur Rolle von VOBs bei Gothic vgl. \autocite{wiki_vob}.}
+\enquote{\uline{Outside View Only}}, \enquote{\uline{Tastatur Only} (evtl Maus Inventory \& \enquote{\uline{Fernklick}} Unterstützung)} sowie \enquote{Items = VOBs},\autocite[S.~1]{orpheus_interface} wobei \enquote{VOB} hier für \enquote{Virtuelles Objekt} steht.\footnote{Zur Rolle von VOBs bei Gothic vgl. \autocite{wiki_vob}.}
 Alle drei Punkte haben sich als für die Entwicklung von Gothic maßgeblich herausgestellt:
 Den Namenlosen Helden sehen wir immer aus der Third-Person-Perspektive, die Steuerung unterstützt zwar Mauseingabe, bleibt in der Hauptsache aber auf die Tastatur fokussiert, und alle Gegenstände, die wir in der Spielwelt finden können, sind in der Engine als virtuelle Objekte angelegt.
 
@@ -136,7 +138,7 @@ Unter diesen drei wegweisenden Stichpunkten folgt eine von (a) bis (p) reichende
 \enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{Springen}, \enquote{Türen öffnen/Truhe öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.\autocite[S.~1]{orpheus_interface}
 Das meiste davon ist am Ende auch umgesetzt worden; nur bei vier Punkten -- \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken} und \enquote{Battle Mode} -- gibt es nennenswerte Abweichungen.
 
-Nachdem Mike Hoge sich zu dieser Zeit noch die Frage \enquote{sollen \ul{alle} mögl. \ul{verschiebbar} sein?}\autocite[S.~3]{orpheus_interface} notiert hatte, ist \enquote{VOB verschieben} im fertigen Spiel -- wenn überhaupt -- nur noch als einzelnes, für Spieler*innen irrelevantes Artefakt vorhanden:
+Nachdem Mike Hoge sich zu dieser Zeit noch die Frage \enquote{sollen \uline{alle} mögl. \uline{verschiebbar} sein?}\autocite[S.~3]{orpheus_interface} notiert hatte, ist \enquote{VOB verschieben} im fertigen Spiel -- wenn überhaupt -- nur noch als einzelnes, für Spieler*innen irrelevantes Artefakt vorhanden:
 In der Klosterruine gibt es eine freistehende Säule, die sich zwar nicht wirklich verschieben, aber zumindest umwerfen lässt -- wobei sie dann auch noch in die falsche Richtung fällt.
 Es scheint offensichtlich, das sie als improvisierte Brücke zur Überwindung eines Abgrunds dienen sollte.
 Statt über den Abgrund fällt sie aber, wenn man sie umstößt, vom Abgrund fort.
@@ -152,27 +154,27 @@ Zwar gibt es vereinzelt Begleiter, mit denen man kurzfristig gemeinsam durch die
 \enquote{Party NSC lenken} ist im Laufe der Entwicklung also auch unter den Tisch gefallen.
 Darauf, dass die Möglichkeit einer Party aber ernsthaft in Erwägung gezogen wurde, deuten einige weitere Notizen in \enquote{Orpheus -- Interface} hin.
 \enquote{Bis zu 4 Party NSCs}\footnote{\autocite[S.~5]{orpheus_interface}. An anderer Stelle ist von \enquote{2 Slots (1 + 1)} die Rede (\autocite[S.~7]{orpheus_b_scribbles}).} sollte es geben.
-Diese \enquote{Kontrollierte[n] NSCs [sollten] \ul{farblich} gekennzeichnet}\autocite[S.~5]{orpheus_interface} sein und sich über eine Reihe an Befehlen steuern lassen.
+Diese \enquote{Kontrollierte[n] NSCs [sollten] \uline{farblich} gekennzeichnet}\autocite[S.~5]{orpheus_interface} sein und sich über eine Reihe an Befehlen steuern lassen.
 In einer kleinen Skizze sind dafür vier nebeneinanderliegende Tasten eines \enquote{Pop Up Menu[s]} mit \enquote{follow}, \enquote{wait}, \enquote{action} und \enquote{attack} beschriftet.\autocite[S.~3]{orpheus_interface}
 An anderer Stelle finden wir eine abweichende Variante mit vier verschiedenen Knöpfen:
-Über den \enquote{\ul{1. Button}} sollte ein kontrollierter Charakter dazu aufgefordert werden können, zu \enquote{Warte[n]} oder zu \enquote{Folge[n]}.
-Eine dritte Option, nämlich ihn \enquote{\st{Fliehe}[n]} zu lassen, ist hier durchgestrichen.
-Über einen \enquote{\ul{2. Button}} sollte er dazu aufgefordert werden können, eine \enquote{Aktion} auszuführen, beispielsweise -- bezogen auf eine Tür -- \enquote{Lockpick} oder \enquote{Einrennen}.
-Über einen \enquote{\ul{3. Button}} hätte man über \enquote{Kampf/Sparflamme} entscheiden können sollen, also wahrscheinlich darüber, ob der kontrollierte Charakter mit gezogener Waffe kampfbereit sein soll oder nicht.
-Die Partymitglieder \enquote{kämpfen bis 15\%} ihrer Lebensenergie, hätten aber \enquote{\ul{Keine} selbstständige Aggression gegen andere NSCs}.
+Über den \enquote{\uline{1. Button}} sollte ein kontrollierter Charakter dazu aufgefordert werden können, zu \enquote{Warte[n]} oder zu \enquote{Folge[n]}.
+Eine dritte Option, nämlich ihn \enquote{\sout{Fliehe}[n]} zu lassen, ist hier durchgestrichen.
+Über einen \enquote{\uline{2. Button}} sollte er dazu aufgefordert werden können, eine \enquote{Aktion} auszuführen, beispielsweise -- bezogen auf eine Tür -- \enquote{Lockpick} oder \enquote{Einrennen}.
+Über einen \enquote{\uline{3. Button}} hätte man über \enquote{Kampf/Sparflamme} entscheiden können sollen, also wahrscheinlich darüber, ob der kontrollierte Charakter mit gezogener Waffe kampfbereit sein soll oder nicht.
+Die Partymitglieder \enquote{kämpfen bis 15\%} ihrer Lebensenergie, hätten aber \enquote{\uline{Keine} selbstständige Aggression gegen andere NSCs}.
 Über einen \enquote{General Button} schließlich hätte sich ein \enquote{Kriegsrat} der Party einberufen lassen sollen.
 Diese Befehle hätten sich wahrscheinlich jeweils auf ein einziges Mitglied der Gruppe beziehen sollen.
 Darauf könnte zum einen hindeuten, dass die Notiz so aussieht, als sollten die drei Buttons unter dem Balken für Lebensenergie erscheinen, der überlicherweise erscheint, wenn man sich einem NSC (oder einem Monster) zuwendet.
-Außerdem sind zwei weitere -- danach wieder durchgestrichene -- Ideen für einen \enquote{\st{General Button 2}} sowie einen \enquote{\st{General Button 3}} notiert.
-Mit ersterem hätte man zwischen \enquote{\st{Alle Warten/Alle Folgen/Alle Kampf}} und mit zweiterem zwischen \enquote{\st{Kampf/Alle Still}} umschalten können sollen;\autocite[S.~5]{orpheus_interface} \enquote{General} scheint sich also immer auf die ganze Gruppe zu beziehen.
+Außerdem sind zwei weitere -- danach wieder durchgestrichene -- Ideen für einen \enquote{\sout{General Button 2}} sowie einen \enquote{\sout{General Button 3}} notiert.
+Mit ersterem hätte man zwischen \enquote{\sout{Alle Warten/Alle Folgen/Alle Kampf}} und mit zweiterem zwischen \enquote{\sout{Kampf/Alle Still}} umschalten können sollen;\autocite[S.~5]{orpheus_interface} \enquote{General} scheint sich also immer auf die ganze Gruppe zu beziehen.
 
 Eine solche Party bringt andere spielmechanische Herausforderungen mit sich als ein einzelner Charakter:
 Wenn unser Namenloser Held in Gothic stirbt, ist das Spiel zu Ende und wir müssen neu laden.
 Aber wie geht man damit um, wenn nur ein Mitglied der Party stirbt?
-\enquote{\textsc{Wie Wiederbelebung?}} fragt Mike Hoge an einer Stelle und notiert daneben, dass das über einen \enquote{\ul{Schrein}} geregelt werden könnte, der dem \enquote{Mafiabos} gehört.\autocite[S.~7]{orpheus_b_scribbles}
-Die auf einer anderen Seite befindliche Notiz \enquote{\ul{1} XP Pool}\autocite[S.~8]{orpheus_b_scribbles} könnte sich wiederum darauf beziehen, dass Erfahrungspunkte nicht für jedes Partymitglied einzeln, sondern für die Gruppe als ganzes gezählt werden sollen.
+\enquote{\textsc{Wie Wiederbelebung?}} fragt Mike Hoge an einer Stelle und notiert daneben, dass das über einen \enquote{\uline{Schrein}} geregelt werden könnte, der dem \enquote{Mafiabos} gehört.\autocite[S.~7]{orpheus_b_scribbles}
+Die auf einer anderen Seite befindliche Notiz \enquote{\uline{1} XP Pool}\autocite[S.~8]{orpheus_b_scribbles} könnte sich wiederum darauf beziehen, dass Erfahrungspunkte nicht für jedes Partymitglied einzeln, sondern für die Gruppe als ganzes gezählt werden sollen.
 Ein ähnliches Problem gibt es für die Objekte, die sich in der Spielwelt sammeln lassen:
-\enquote{Individuell \textsc{oder} Gruppe} schreibt Mike Hoge unter der Überschrift \enquote{\ul{Besitzflag}}.
+\enquote{Individuell \textsc{oder} Gruppe} schreibt Mike Hoge unter der Überschrift \enquote{\uline{Besitzflag}}.
 Es lässt sich vermuten, dass jedes Objekt entweder als Besitz eines Charakters oder als das der Party ausgewiesen werden sollte, wobei gilt:
 \enquote{08/15 Items haben Gruppenflag.}\autocite[S.~9]{orpheus_b_scribbles}
 Außerdem stellt sich -- darauf deutet der Stichpunkt \enquote{Partymitglied\_Bewegungs\_Spielraum}\autocite[S.~8]{orpheus_b_scribbles} hin -- die Frage, wie mit räumlicher Entfernung zwischen den einzelnen Partymitgliedern umgegangen werden soll.
@@ -180,7 +182,7 @@ Es gibt beispielsweise Überlegungen, dass die oben erwähnte Aufforderung \enqu
 Weil das unter Umständen aber zu unpraktisch sein könnte, ist dazu in Klammern eine Alternative notiert:
 \enquote{evtl Telepath. Kommunikation}.\autocite[S.~5]{orpheus_interface}
 Und was macht man, wenn sich ein Gruppenmitglied -- aber nicht der Spieler selbst -- an einem Ort aufhält, an dem etwas Wichtiges ausgelöst werden soll?
-Der etwas kryptische Vermerk \enquote{Kritische Dialoge \textsc{nicht} Triggern wenn \ul{Party} $-$ NSC $=$ \ul{Mensch}!}\autocite[S.~9]{orpheus_b_scribbles} könnte unter Umständen so gelesen werden, dass ein wichtiger Dialog nicht ausgelöst werden soll, wenn Teile der Gruppe zwar am entsprechenden Ort sind, der menschliche Spieler (\enquote{NSC = Mensch}) aber fehlt (\enquote{$-$}); wobei man freilich darüber hinwegsehen müsste, dass \enquote{NSC} eigentlich einen Charakter beschreibt, der nicht der Spieler ist.
+Der etwas kryptische Vermerk \enquote{Kritische Dialoge \textsc{nicht} Triggern wenn \uline{Party} $-$ NSC $=$ \uline{Mensch}!}\autocite[S.~9]{orpheus_b_scribbles} könnte unter Umständen so gelesen werden, dass ein wichtiger Dialog nicht ausgelöst werden soll, wenn Teile der Gruppe zwar am entsprechenden Ort sind, der menschliche Spieler (\enquote{NSC = Mensch}) aber fehlt (\enquote{$-$}); wobei man freilich darüber hinwegsehen müsste, dass \enquote{NSC} eigentlich einen Charakter beschreibt, der nicht der Spieler ist.
 
 Neben \enquote{VOB verschieben}, \enquote{in VOB verstecken} und \enquote{Party NSC lenken} bleibt dann noch der \enquote{Battle Mode}, wobei nicht unmittelbar klar ist, was sich die Entwickler zu diesem Zeitpunkt darunter vorgestellt haben.
 Bei der Erwähnung eines solchen Kampfmodus mag einem zum Beispiel der unter anderem in JPRGs bis heute tradierte Kampfbildschirm in den Sinn kommen, in dem das (in der Regel rundenbasierte) Geschehen oft abstrahiert aus einem Blick von der Seite dargestellt wird, wobei sich die Kontrahenten beispielsweise am linken und rechten Rand des Bildschirms oder diagonal gegenüberstehen.\footnote{Ein frühes -- vielleicht sogar das erste -- Beispiel für eine Kampfansicht, in der sich die Parteien links und rechts gegenüberstehen, stellt das 1987 in Japan und 1990 in den Vereinigten Staaten erschienene \textit{Final Fantasy} dar. Eine diagonale Gegenüberstellung findet sich etwa in dem 1993 erschienenen \textit{Ogre Battle -- The March of the Black Queen}. Daneben gibt es noch die frontale Darstellung der Gegner, entweder aus der Egoperspektive des Spielers, wie etwa im 1986 veröffentlichten \textit{Dragon Quest}, oder über die Schulter der Spielfiguren, wie beispielsweise im 1993 erschienenen \textit{Lufia \& the Fortress of Doom}. Diese Formen eines separaten Kampfbildschirms haben sich bis heute erhalten, etwa im 2016 erschienenen \textit{Persona 5} oder im 2018 erschienenen \textit{Octopath Traveler}.}
@@ -200,22 +202,22 @@ Den Notizen zur Kampfsteuerung zufolge sollte durch die Kombination von Strg und
 
 Auch abseits des Kampfes war Gothic schon immer für seine etwas eigenwillige Steuerung bekannt.
 Petra Schmitz, die das Spiel vor seiner Veröffentlichung für die \textit{GameStar} bei einem Preview-Termin anspielen konnte, erinnert sich daran, wie schockiert sie davon war, dass das Spiel zu diesem Zeitpunkt keine Maussteuerung unterstütze.\autocite{schmitz_maussteuerung}
-Die oben erwähnte Notiz \enquote{\ul{Tastatur Only}}\autocite[S.~1]{orpheus_interface} sollte bis zum Schluss richtungsweisend bleiben.
+Die oben erwähnte Notiz \enquote{\uline{Tastatur Only}}\autocite[S.~1]{orpheus_interface} sollte bis zum Schluss richtungsweisend bleiben.
 Ein zentrales Element der Steuerung im finalen Gothic ist auch außerhalb des Kampfes die Steuerungstaste.
 Während die Bewegung klassisch über die Tasten W, A, S und D funktioniert, gesellt sich Strg hinzu, wenn wir mit Elementen in der Spielwelt interagieren wollen.
 Drücken wir beispielsweise Strg und W, können wir unter anderem ein Objekt benutzen, einen Gegenstand aufsammeln, eine Truhe öffnen oder eine Person ansprechen.
 In der Zeit von Orpheus sind solche Dinge noch auf verschiedene Tastenkombinationen verteilt.
-\enquote{Fire + $\uparrow$} war für das \enquote{\ul{Manipulieren}} von Objekten in der Spielwelt (\enquote{Tür/Schrank/Truhe/Hebel/Knopf/Fackel}), \enquote{Fire + $\downarrow$} für das \enquote{\ul{Aufheben}} von Gegenständen (wobei man anschließend mit \enquote{up} oder \enquote{down} hätte entscheiden können sollen, ob man den Gegenstand ins Inventar aufnehmen oder \enquote{wieder weglegen} möchte), \enquote{Fire + $\leftarrow$} für das \enquote{\ul{Betrachten}} und \enquote{Fire + $\rightarrow$} für das \enquote{\ul{Reden}} gedacht.\autocite[S.~2]{orpheus_interface}
+\enquote{Fire + $\uparrow$} war für das \enquote{\uline{Manipulieren}} von Objekten in der Spielwelt (\enquote{Tür/Schrank/Truhe/Hebel/Knopf/Fackel}), \enquote{Fire + $\downarrow$} für das \enquote{\uline{Aufheben}} von Gegenständen (wobei man anschließend mit \enquote{up} oder \enquote{down} hätte entscheiden können sollen, ob man den Gegenstand ins Inventar aufnehmen oder \enquote{wieder weglegen} möchte), \enquote{Fire + $\leftarrow$} für das \enquote{\uline{Betrachten}} und \enquote{Fire + $\rightarrow$} für das \enquote{\uline{Reden}} gedacht.\autocite[S.~2]{orpheus_interface}
 Daneben war \enquote{Alt} für \enquote{Springen/Klettern/in VOB verstecken} vorgesehen.\autocite[S.~3]{orpheus_interface}
 
 Die Notizen zur Auswahl von Zaubern wiederum sind etwas kryptisch.
-Es scheint, als sei die erste Idee gewesen, dass man über eine Funktion zum Schnellzugriff mittels der Tabulatortaste auf verschiedene Gegenstände hätte zugreifen können sollen, wobei eines davon das Zauberbuch gewesen wäre (\enquote{QuickSlot2 $=$ SpellBook; $\rightleftarrows$<\textsc{tab}> $=$ Get\ul{QS2}items}).
-Über \enquote{Fire} hätte sich dann ein Spruch aus dem Buch vorbereiten lassen sollen (\enquote{<Fire> $=$ \ul{Activate} [Bookmark] Spell}).
+Es scheint, als sei die erste Idee gewesen, dass man über eine Funktion zum Schnellzugriff mittels der Tabulatortaste auf verschiedene Gegenstände hätte zugreifen können sollen, wobei eines davon das Zauberbuch gewesen wäre (\enquote{QuickSlot2 $=$ SpellBook; $\rightleftarrows$<\textsc{tab}> $=$ Get\uline{QS2}items}).
+Über \enquote{Fire} hätte sich dann ein Spruch aus dem Buch vorbereiten lassen sollen (\enquote{<Fire> $=$ \uline{Activate} [Bookmark] Spell}).
 Darunter ist notiert, dass sich das Buch auch über die Eingabetaste hätte öffnen lassen (\enquote{<Return> $=$ Book $\Rightarrow$ Spell Select (Bookmark)}) und sich eine Auswahl an Zaubern unter Umständen auf den Nummernblock hätte legen lassen (\enquote{evtl. QuickChoiceSpells on Keypad 1--0}) sollen.
 Es scheint damit so, dass man sich zuerst einen Zauber aus seinem Buch hätte zurechtlegen müssen, ehe man ihn dann -- in einem nächsten Schritt -- hätte wirken können.
 Von späterer Hand sind allerdings zwei Notizen hinzugefügt worden, die darauf hinzudeuten scheinen, dass sich –– entweder auch oder stattdessen -- ohne den Umweg über das Zurechtlegen \enquote{\textsc{direkt aus} [dem] \textsc{Buch zaubern}} lassen sollte, indem man zunächst die Eingabetaste drückt, dann denn Zauber auswählt und ihn dann mit \enquote{Fire} wirkt (\enquote{<Return>$_{\downarrow}^{\uparrow}$<Fire>}).
 Neben diesen Überlegungen zur Steuerung finden wir an dieser Stelle zwei generelle Gedanken zu Zaubern:
-Sie sollten, erstens, einer \enquote{\textsc{\ul{logische}}[n] \textsc{\ul{Sortierung}}} folgen und, zweitens, sollte es \enquote{\textsc{wenig Sprüche auf einmal}} geben, die dafür aber über eine \enquote{\textsc{individuelle [...] Steigerung}} verfügen sollten, indem man die entsprechende Taste länger gedrückt hält (darauf deuten die beiden Vermerke \enquote{long press mighty spell} und \enquote{<Fire\_pressed> $=$ Inc[line] Spell Strength} hin).\autocite[S.~3]{orpheus_interface}
+Sie sollten, erstens, einer \enquote{\textsc{\uline{logische}}[n] \textsc{\uline{Sortierung}}} folgen und, zweitens, sollte es \enquote{\textsc{wenig Sprüche auf einmal}} geben, die dafür aber über eine \enquote{\textsc{individuelle [...] Steigerung}} verfügen sollten, indem man die entsprechende Taste länger gedrückt hält (darauf deuten die beiden Vermerke \enquote{long press mighty spell} und \enquote{<Fire\_pressed> $=$ Inc[line] Spell Strength} hin).\autocite[S.~3]{orpheus_interface}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
