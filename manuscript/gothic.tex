@@ -29,6 +29,9 @@
 
 \addtokomafont{disposition}{\rmfamily}
 
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{2pt}
+
 \deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
    \setlength{\skip\footins}{1.5em} 
    \setlength{\footnotesep}{1em}
@@ -116,7 +119,8 @@ Ein Stichwort fällt besonders ins Auge:
 An drei Stellen notiert Mike Hoge \enquote{Threaten \& Kill, Xena-Move}.\autocite[S.~2]{orpheus_bewegungen}
 Dabei bezieht er sich vermutlich auf die kampferprobte Protagonistin der zwischen 1995 und 2001 gedrehten Fernsehserie \textit{Xena -- Die Kriegerprinzessin}, wobei nicht klar ist, welcher ihrer \enquote{Moves} hier gemeint ist. % Mike Hoge fragen.
 
-Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein dreiseitiger Teil zu \enquote{\uline{Graphiken}} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spielansicht}}, \enquote{\uline{Spielfigurenanimation}}, \enquote{\uline{Getrennt animierte \textsc{gams}}}, \enquote{\uline{Diverse Mashes}} sowie \enquote{\uline{Texturen}}.
+Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein dreiseitiger Teil zu \enquote{\uline{Gra\-phi\-ken}} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spiel\-an\-sicht}}, \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te \textsc{gams}}}, \enquote{\uline{Di\-ver\-se Mashes}} sowie \enquote{\uline{Tex\-tu\-ren}}.
+Die Punkte \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te \textsc{gams}}} und \enquote{\uline{Di\-ver\-se Mashes}} enden jeweils mit einer Aufzählung der \enquote{\uline{Vor\-tei\-le}} des gewählten Vorgehens.
 
 Unter \enquote{\uline{Spielansicht}} ist festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
 Während des Spielens hätten Spieler*innen frei zwischen Ego- und Verfolgerperspektive wählen können sollen, wobei für letztere vorgesehen war, dass sich die Kamera etwa fünf Meter hinter der Spielfigur befindet und mit Wänden kollidiert:
@@ -124,8 +128,15 @@ Während des Spielens hätten Spieler*innen frei zwischen Ego- und Verfolgerpers
 Eine dritte Variante war für den \enquote{Kampfmodus} (siehe auch \autoref{sec:orpheus_mechanik}) vorgesehen:
 \enquote{Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.}\autocite[S.~1]{orpheus_zusammenfassung}
 
-Jede (menschliche) Spielfigur, erfahren wir unter \enquote{\uline{Spielfigurenanimation}}, sollte aus 15 sogenannten \enquote{Limbs} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die  jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden.
-Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße.}
+Jede (menschliche) Spielfigur, erfahren wir unter \enquote{\uline{Spielfigurenanimation}}, sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die  jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden.
+Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße} (visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben; die schraffierten Teile stellen die Anschlußpunkte dar).
+
+\begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[scale=0.75]{orpheus_spielfigurenanimation.pdf}}
+   \caption{Ausschnitt aus \enquote{Zusammenfassung zum Orpheus-Konzept}}
+   \label{fig:orpheus_spielfigurenanimation}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
