@@ -119,24 +119,27 @@ Ein Stichwort fällt besonders ins Auge:
 An drei Stellen notiert Mike Hoge \enquote{Threaten \& Kill, Xena-Move}.\autocite[S.~2]{orpheus_bewegungen}
 Dabei bezieht er sich vermutlich auf die kampferprobte Protagonistin der zwischen 1995 und 2001 gedrehten Fernsehserie \textit{Xena -- Die Kriegerprinzessin}, wobei nicht klar ist, welcher ihrer \enquote{Moves} hier gemeint ist. % Mike Hoge fragen.
 
-Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein dreiseitiger Teil zu \enquote{\uline{Gra\-phi\-ken}} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spiel\-an\-sicht}}, \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te \textsc{gams}}}, \enquote{\uline{Di\-ver\-se Mashes}}, \enquote{\uline{Tex\-tu\-ren}} sowie \enquote{\uline{Evtl. User-Con\-trol\-led-On\-line-Ani\-ma\-ti\-on}}.
-Die Punkte \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te \textsc{gams}}} und \enquote{\uline{Di\-ver\-se Mashes}} enden jeweils mit einer Aufzählung der \enquote{\uline{Vor\-tei\-le}} des gewählten Vorgehens.
+Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} ist nur ein dreiseitiger Teil zu \enquote{\uline{Gra\-phi\-ken}} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spiel\-an\-sicht}}, \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te GAMS}}, \enquote{\uline{Di\-ver\-se Mashes}}, \enquote{\uline{Tex\-tu\-ren}} sowie \enquote{\uline{Evtl. User-Con\-trol\-led-On\-line-Ani\-ma\-ti\-on}}.
+Die Punkte \enquote{\uline{Spiel\-fi\-gu\-ren\-ani\-ma\-ti\-on}}, \enquote{\uline{Ge\-trennt ani\-mier\-te GAMS}} und \enquote{\uline{Di\-ver\-se Mashes}} enden jeweils mit einer Aufzählung der \enquote{\uline{Vor\-tei\-le}} des gewählten Vorgehens.
 
 Unter \enquote{\uline{Spielansicht}} ist festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
 Während des Spielens hätten Spieler*innen frei zwischen Ego- und Verfolgerperspektive wählen können sollen, wobei für letztere vorgesehen war, dass sich die Kamera etwa fünf Meter hinter der Spielfigur befindet und mit Wänden kollidiert:
 \enquote{Steht die Figur mit dem Rücken zur Wand, sieht ihr die Kamera über die Schulter. Geht die Figur jetzt los[,] so folgt ihr die Kamera erst wieder, wenn die Figur 5m entfernt ist.}
 Eine dritte Variante war für den \enquote{Kampfmodus} (siehe auch \autoref{sec:orpheus_mechanik}) vorgesehen:
-\enquote{Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.}\autocite[S.~1]{orpheus_zusammenfassung}
+
+\begin{quote}
+Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.\autocite[S.~1]{orpheus_zusammenfassung}
+\end{quote}
 
 Jede (menschliche) Figur, erfahren wir unter \enquote{\uline{Spielfigurenanimation}}, sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die  jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden.
 Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße}.
-Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben, wobei die schraffierten Teile die Anschlusspunkte darstellen.
-Jede Animationsphase einer solchen Spielfigur sollte \enquote{aus einem Gelenk-Animations-Modell (\textbf{GAM})} bestehen, das sich aus \enquote{19 Raumkoordinaten} sowie \enquote{15 Limbvektoren} zusammensetzt, wobei gelten sollte: \enquote{Jede Koordinate legt eine Gelenkverbindung zwischen zwei Limbs fest.}
-Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate an deren äußerem Ende (der \enquote{Schwertspitze}) sowie ein zusätzlicher Waffenvektor hinzukommen.\autocite[S.~1]{orpheus_zusammenfassung}
+Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben, wobei die schraffierten Flächen die Anschlusspunkte darstellen.
+Jede Animationsphase einer solchen Figur sollte \enquote{aus einem Gelenk-Animations-Modell (\textbf{GAM})} bestehen, das sich aus \enquote{19 Raumkoordinaten} sowie \enquote{15 Limbvektoren} zusammensetzt, wobei gelten sollte: \enquote{Jede Koordinate legt eine Gelenkverbindung zwischen zwei Limbs fest.}
+Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate an deren äußerem Ende (beispielsweise der \enquote{Schwertspitze}) sowie ein zusätzlicher Waffenvektor hinzukommen.\autocite[S.~1]{orpheus_zusammenfassung}
 Dargestellt ist das in \autoref{fig:orpheus_spielfigurenanimation} unten links.
 Die insgesamt 15 Limbs sind über 14 Gelenkverbindungen miteinander verknüpft.
 Um auf die 19 -- beziehungsweise mit gezogener Waffe 20 -- Raumkoordinaten zu kommen, braucht es also mehr als nur die Gelenkverbindungen zwischen den Limbs.
-Tatsächlich kommen, wie aus der Abbildung deutlich wird, bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Hächster Kopfpunkt}.\autocite[S.~3]{orpheus_zusammenfassung}
+Tatsächlich kommen, wie aus der Abbildung deutlich wird, bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Höchster Kopfpunkt}.\autocite[S.~3]{orpheus_zusammenfassung}
 Im Spiel sollte die Figur dann \enquote{aus GAM und Limbs \textbf{zusammengesetzt}} werden.\autocite[S.~1]{orpheus_zusammenfassung}
 Als \enquote{\uline{Vorteile}} führt Mike Hoge auf:
 
@@ -156,7 +159,7 @@ Hier finden wir \enquote{stehen}, \enquote{gehen}, \enquote{rennen}, \enquote{st
    \label{fig:orpheus_spielfigurenanimation}
 \end{figure}
 
-Unter \enquote{\uline{Ge\-trennt ani\-mier\-te \textsc{gams}}} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.\autocite[S.~2]{orpheus_zusammenfassung}
+Unter \enquote{\uline{Ge\-trennt ani\-mier\-te GAMS}} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.\autocite[S.~2]{orpheus_zusammenfassung}
 Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
 
 \begin{quote}
@@ -164,11 +167,11 @@ Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
    Sie kann mit dem rechten Arm schlagen, den Kopf in die Richtung drehen \sout{und mit links einen Schlag automatisch verteidigen.}
    Wenn die Figur ein Schwert trägt und geht, so bewegt sich der Arm anders als wenn sie mit leeren Händen läuft; die Beinanimation bleibt aber gleich.
    Der linke Arm kann außerdem noch einen Schild tragen und entsprechend animiert sein.
-   Der modulare Zusammenbau dieser Animationssequenzen verhindert einen \textsc{gam}-Overkill, da angestrebt wird, Waffen in der Hand auch im Outsideview darzustellen.\footnote{\autocite[S.~2]{orpheus_zusammenfassung}. Die Durchstreichung ist nachträglich handschriftlich erfolgt.}
+   Der modulare Zusammenbau dieser Animationssequenzen verhindert einen GAM-Overkill, da angestrebt wird, Waffen in der Hand auch im Outsideview darzustellen.\footnote{\autocite[S.~2]{orpheus_zusammenfassung}. Die Durchstreichung ist nachträglich handschriftlich erfolgt.}
 \end{quote}
 
 Hinter \enquote{\uline{Diverse Meshes}} verbirgt sich die Idee, dass die als Meshes abgespeicherten Limbs in verschiedenen Formen verfügbar und sich beliebig am Gelenk-Animations-Modell kombinieren lassen sollten: \enquote{Jedes Limb-Mesh kommt in mehreren Ausführungen vor.
-Somit kann man verschiedene Köpfe, Oberkörper, etc. in dasselbe \textsc{gam} einhängen.}
+Somit kann man verschiedene Köpfe, Oberkörper, etc. in dasselbe GAM einhängen.}
 In einer Tabelle sind verschiedene mögliche Formen für die jeweiligen Limbs (\enquote{Kopf}, \enquote{Oberkörper}, \enquote{Unterleib}, \enquote{Oberarm}, \enquote{Unterarm}, \enquote{Hand}, \enquote{Oberschenkel}, \enquote{Unterschenkel} und \enquote{Fuß}) gesammelt.
 Für den \enquote{Kopf} sind das beispielsweise \enquote{Visierhelm, Kettenkappe, Kapuze, Hut, lange Haare, kurze Haare, Glatze} und für den \enquote{Unterleib} sind es \enquote{Hose, Röckchen}.
 In einer Anmerkung notiert Mike Hoge: \enquote{\textit{Die Hand bildet eine Ausnahme, da ihr Mesh nicht vom Zustand, sondern von den Aktionen der Figur beeinflußt wird}}.
