@@ -197,34 +197,34 @@ Hier finden wir \enquote{stehen}, \enquote{gehen}, \enquote{rennen}, \enquote{st
 % ORPHEUS – DARSTELLUNG – FIGURENVIELFALT %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Figurenvielfalt}\label{sec:orpheus_darstellung_figurenvielfalt}
-In der \enquote{Zusammenfassung} werden unter den Überschriften \enquote{\uline{Diverse Meshes}} und \enquote{\uline{Texturen}} Ideen aufgeführt, die die technisch effiziente Ermöglichung einer möglichst große Figurenvielfalt betreffen.
+In der \enquote{Zusammenfassung} werden unter den Überschriften \enquote{\uline{Diverse Meshes}} und \enquote{\uline{Texturen}} Ideen aufgeführt, die die technisch effiziente Ermöglichung einer möglichst große Figurenvielfalt behandeln.\footnote{Vgl. \autocite[S.~2\,f.]{orpheus_zusammenfassung}}
 
-Zunächst sollten die als Meshes abgespeicherten Limbs (siehe \autoref{sec:orpheus_darstellung_animation}) in verschiedenen Formen verfügbar sein und sich beliebig am Gelenk-Animations-Modell kombinieren lassen:
+Zunächst sollten, wie wir unter \enquote{\uline{Diverse Meshes}} erfahren, die als Meshes abgespeicherten Limbs (siehe \autoref{sec:orpheus_darstellung_animation}) in verschiedenen Formen verfügbar sein und sich beliebig am Gelenk-Animations-Modell kombinieren lassen:
 \enquote{Jedes Limb-Mesh kommt in mehreren Ausführungen vor.
 Somit kann man verschiedene Köpfe, Oberkörper, etc. in dasselbe GAM einhängen.}
 In einer Tabelle sind verschiedene mögliche Formen für die jeweiligen Limbs (\enquote{Kopf}, \enquote{Oberkörper}, \enquote{Unterleib}, \enquote{Oberarm}, \enquote{Unterarm}, \enquote{Hand}, \enquote{Oberschenkel}, \enquote{Unterschenkel} und \enquote{Fuß}) gesammelt.
 Für den \enquote{Kopf} sind das beispielsweise \enquote{Visierhelm, Kettenkappe, Kapuze, Hut, lange Haare, kurze Haare, Glatze} und für den \enquote{Unterleib} sind es \enquote{Hose, Röckchen}.
 In einer Anmerkung notiert Mike Hoge: \enquote{\textit{Die Hand bildet eine Ausnahme, da ihr Mesh nicht vom Zustand, sondern von den Aktionen der Figur beeinflußt wird}}.
-Dementsprechend finden wir hier die Varianten \enquote{offen, geschlossen, hält sich fest}.\autocite[S.~2]{orpheus_zusammenfassung}
-Die \enquote{\uline{Vorteile}} liegen auf der Hand: 
+Dementsprechend finden wir hier die Varianten \enquote{offen, geschlossen, hält sich fest}.
+Die \enquote{\uline{Vorteile}} liegen auf der Hand:
 
 \begin{quote}
    Durch das Baukastensystem wird durch Kombinationen große Figurenvielfalt erreicht.
    Würden alle Figuren als Ganzkörpermesh abgelegt, würden z.\,B. in einer Stadt nur wenige Menschen mit verschiedenen Meshes herumlaufen.
    Vor allen Dingen beim Kopf wäre dies tragisch.
-   Mit dem Baukastensystem kann man Köpfe mit verschiedenen Frisuren oder Helmen mit gleichen Körpern kombinieren, und erhält so (in Verbindung mit unterschiedlichen Texturen) verschiedene Figuren.\autocite[S.~2]{orpheus_zusammenfassung}
+   Mit dem Baukastensystem kann man Köpfe mit verschiedenen Frisuren oder Helmen mit gleichen Körpern kombinieren, und erhält so (in Verbindung mit unterschiedlichen Texturen) verschiedene Figuren.
 \end{quote}
 
-Für jede Ausführung der Limb-Meshes sollte es dann \enquote{individuell auf das entsprechende Limb zugeschneidert[e]} Texturen geben, wodurch sich \enquote{auch hier (durch unterschiedliche Texturierung gleicher Meshes) durch das Baukastensystem Vielfalt erzeugen}\autocite[S.~2]{orpheus_zusammenfassung} lässt, wobei zusätzlich alle \enquote{Körpertexturen mit Ausnahme von Händen und Füßen} in drei unterschiedlichen Varianten vorkommen sollten: \enquote{normal}, \enquote{verletzt} und \enquote{schwer verletzt}.\autocite[S.~3]{orpheus_zusammenfassung}
-Außerdem effizienzgründen sollten Texturen außerdem kombinierbar sein:
+Für jede Ausführung der Limb-Meshes sollte es dann \enquote{individuell auf das entsprechende Limb zugeschneidert[e]} Texturen geben, wodurch sich \enquote{auch hier (durch unterschiedliche Texturierung gleicher Meshes) durch das Baukastensystem Vielfalt erzeugen} lässt, wobei zusätzlich alle \enquote{Körpertexturen mit Ausnahme von Händen und Füßen} in drei unterschiedlichen Varianten vorkommen sollten: \enquote{normal}, \enquote{verletzt} und \enquote{schwer verletzt}.
+Aus Effizienzgründen sollten Texturen außerdem kombinierbar sein:
 
 \begin{quote}
-   Ein Limb kan [sic] mit zwei verschiedenen Texturen belegt werden. 
-   Bevor die Kopftextur auf das Kopf-Limb gemappt wird, wird diese aus Gesichtstextur und Kopftextur zusammengesetzt, um nicht für jedes Gesicht in Verbindung mit allen Frisuren und Helmen je eine komplette Kopftextur im Speicher ablegen zu müssen.\autocite[S.~2\,f.]{orpheus_zusammenfassung}
+   Ein Limb kan [sic] mit zwei verschiedenen Texturen belegt werden.
+   Bevor die Kopftextur auf das Kopf-Limb gemappt wird, wird diese aus Gesichtstextur und Kopftextur zusammengesetzt, um nicht für jedes Gesicht in Verbindung mit allen Frisuren und Helmen je eine komplette Kopftextur im Speicher ablegen zu müssen.
 \end{quote}
 
-\noindent Damit \enquote{bei Kamerafahrten nahe an die Figur keine Pixelhaufen als Gesicht entstehen}, sollten die entsprechenden Texturen außerdem \enquote{als größere Grafiken abgelegt} werden.
-Bei den Texturen für andere Limbs wäre das vernachlässigbar: \enquote{Beim Oberkörper ist dieser Effekt nicht so schlimm.}\autocite[S.~2]{orpheus_zusammenfassung} % LZ %
+Damit \enquote{bei Kamerafahrten nahe an die Figur keine Pixelhaufen als Gesicht entstehen}, sollten zumindest die Kopftexturen außerdem \enquote{als größere Grafiken abgelegt} werden.
+Bei den Texturen für andere Limbs wäre das vernachlässigbar: \enquote{Beim Oberkörper ist dieser Effekt nicht so schlimm.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
