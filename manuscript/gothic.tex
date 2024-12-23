@@ -117,13 +117,13 @@ Auf diesen Seiten finden wir unter anderem Informationen hinsichtlich geplanter 
 % ORPHEUS – DARSTELLUNG – KAMERA %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Kamera}\label{sec:orpheus_darstellung_kamera}
-In der \enquote{Zusammenfassung} ist unter der Überschrift \enquote{\uline{Spielansicht}} festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
+In der \enquote{Zusammenfassung} ist unter der Überschrift \enquote{\uline{Spielansicht}}\autocite[Vgl.][S.~1]{orpheus_zusammenfassung} festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
 Während des Spielens hätten Spieler*innen frei zwischen Ego- und Verfolgerperspektive wählen können sollen, wobei für letztere vorgesehen war, dass sich die Kamera etwa fünf Meter hinter der Spielfigur befindet und mit Wänden kollidiert:
 \enquote{Steht die Figur mit dem Rücken zur Wand, sieht ihr die Kamera über die Schulter. Geht die Figur jetzt los[,] so folgt ihr die Kamera erst wieder, wenn die Figur 5m entfernt ist.}
 Eine dritte Variante war für den \enquote{Kampfmodus} (siehe auch \autoref{sec:orpheus_mechanik}) vorgesehen:
 
 \begin{quote}
-Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.\autocite[S.~1]{orpheus_zusammenfassung}
+Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.
 \end{quote}
 
 
@@ -131,23 +131,38 @@ Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $
 % ORPHEUS – DARSTELLUNG – ANIMATION %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Animation}\label{sec:orpheus_darstellung_animation}
-Jede (menschliche) Figur, erfahren wir in der \enquote{Zusammenfassung} unter \enquote{\uline{Spiel\-figurenanimation}}, sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden.
+Jede (menschliche) Figur, erfahren wir in der \enquote{Zusammenfassung} unter \enquote{\uline{Spiel\-figurenanimation}},\autocite[Vgl.][S.~1]{orpheus_zusammenfassung} sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden sollten.
 Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße}.
 Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben, wobei die schraffierten Flächen die Anschlusspunkte darstellen.
 Jede Animationsphase einer solchen Figur sollte \enquote{aus einem Gelenk-Animations-Modell (\textbf{GAM})} bestehen, das sich aus \enquote{19 Raumkoordinaten} sowie \enquote{15 Limbvektoren} zusammensetzt, wobei gelten sollte: \enquote{Jede Koordinate legt eine Gelenkverbindung zwischen zwei Limbs fest.}
-Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate an deren äußerem Ende (beispielsweise der \enquote{Schwertspitze}) sowie ein zusätzlicher Waffenvektor hinzukommen.\autocite[S.~1]{orpheus_zusammenfassung}
+Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate an deren äußerem Ende (beispielsweise der \enquote{Schwertspitze}) sowie ein zusätzlicher Waffenvektor hinzukommen.
 Dargestellt ist das in \autoref{fig:orpheus_spielfigurenanimation} unten links.
-Die insgesamt 15 Limbs sind über 14 Gelenkverbindungen miteinander verknüpft.
+Die insgesamt 15 Limbs sind hier über 14 Gelenkverbindungen miteinander verknüpft.
 Um auf die 19 -- beziehungsweise mit gezogener Waffe 20 -- Raumkoordinaten zu kommen, braucht es also mehr als nur die Gelenkverbindungen zwischen den Limbs.
-Tatsächlich kommen, wie aus der Abbildung deutlich wird, bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Höchster Kopfpunkt}.\autocite[S.~3]{orpheus_zusammenfassung}
-Im Spiel sollte die Figur dann \enquote{aus GAM und Limbs \textbf{zusammengesetzt}} werden.\autocite[S.~1]{orpheus_zusammenfassung}
+Tatsächlich kommen, wie aus der Abbildung deutlich wird,\autocite[Vgl.][S.~3]{orpheus_zusammenfassung} bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Höchster Kopfpunkt}.
+Im Spiel sollte die Figur dann \enquote{aus GAM und Limbs \textbf{zusammengesetzt}} werden.
 Als \enquote{\uline{Vorteile}} führt Mike Hoge auf:
 
 \begin{quote}
    Jedes Limb muß nur einmal als Mesh abgespeichert werden und kann innerhalb einer Animation immer wieder benutzt werden.
    Somit wird eine angestrebte Vielzahl von Bewegungsabläufen und Animationsschritten bei vergleichsweise geringem Speicheraufwand ermöglicht.
-   Es ist möglich, einer Spielfigur den Kopf abzuhacken, so daß er lustig durch die Gegend fliegt.\autocite[S.~1]{orpheus_zusammenfassung}
+   Es ist möglich, einer Spielfigur den Kopf abzuhacken, so daß er lustig durch die Gegend fliegt.
 \end{quote}
+
+Unter \enquote{\uline{Getrennt animierte GAMS}}\autocite[Vgl.][S.~2]{orpheus_zusammenfassung} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.
+Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
+
+\begin{quote}
+   Die Figur kann gleichzeitig gehen und schlagen.
+   Sie kann mit dem rechten Arm schlagen, den Kopf in die Richtung drehen \sout{und mit links einen Schlag automatisch verteidigen.}
+   Wenn die Figur ein Schwert trägt und geht, so bewegt sich der Arm anders als wenn sie mit leeren Händen läuft; die Beinanimation bleibt aber gleich.
+   Der linke Arm kann außerdem noch einen Schild tragen und entsprechend animiert sein.
+   Der modulare Zusammenbau dieser Animationssequenzen verhindert einen GAM-Overkill, da angestrebt wird, Waffen in der Hand auch im Outsideview darzustellen.\footnote{Die Durchstreichung ist nachträglich handschriftlich erfolgt.}
+\end{quote}
+
+Über den letzten animationsbezogenen Punkt, der am Ende der \enquote{Zusammenfassung} steht, die \enquote{\uline{User-Controlled-Online-Animation}},\autocite[Vgl.][S.~3]{orpheus_zusammenfassung} gibt das Dokument keinen Aufschluss mehr. % Mike Hoge fragen.
+Es endet mit dem in Klammern gesetzten Kommentar: \enquote{hierzu später mehr, ich muß jetzt Tombraider [sic] spielen}.
+Der erste Teil der Tomb-Raider-Serie war keine zwei Monate vorher erschienen, am 25. Oktober 1996.
 
 \vfill
 \begin{figure}[p]
@@ -156,21 +171,6 @@ Als \enquote{\uline{Vorteile}} führt Mike Hoge auf:
    \caption{Ausschnitt aus \enquote{Zusammenfassung zum Orpheus-Konzept}}
    \label{fig:orpheus_spielfigurenanimation}
 \end{figure}
-
-Unter \enquote{\uline{Getrennt animierte GAMS}} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.\autocite[S.~2]{orpheus_zusammenfassung}
-Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
-
-\begin{quote}
-   Die Figur kann gleichzeitig gehen und schlagen.
-   Sie kann mit dem rechten Arm schlagen, den Kopf in die Richtung drehen \sout{und mit links einen Schlag automatisch verteidigen.}
-   Wenn die Figur ein Schwert trägt und geht, so bewegt sich der Arm anders als wenn sie mit leeren Händen läuft; die Beinanimation bleibt aber gleich.
-   Der linke Arm kann außerdem noch einen Schild tragen und entsprechend animiert sein.
-   Der modulare Zusammenbau dieser Animationssequenzen verhindert einen GAM-Overkill, da angestrebt wird, Waffen in der Hand auch im Outsideview darzustellen.\footnote{\autocite[S.~2]{orpheus_zusammenfassung}. Die Durchstreichung ist nachträglich handschriftlich erfolgt.}
-\end{quote}
-
-Über den letzten animationsbezogenen Punkt, der am Ende der \enquote{Zusammenfassung} steht, die \enquote{\uline{User-Controlled-Online-Animation}}, gibt das Dokument keinen Aufschluss mehr. % Mike Hoge fragen.
-Es endet mit dem in Klammern gesetzten Kommentar: \enquote{hierzu später mehr, ich muß jetzt Tombraider [sic] spielen}.\autocite[S.~3]{orpheus_zusammenfassung}
-Der erste Teil der Tomb-Raider-Serie war keine zwei Monate vorher erschienen, am 25. Oktober 1996.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
