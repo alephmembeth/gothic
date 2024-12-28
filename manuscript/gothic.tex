@@ -269,34 +269,33 @@ Beides -- Kasten und Ausrufezeichen -- wird von einer Umrahmung an den rest der 
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ORPHEUS – SPIELMECHANIK UND STEUERUNG %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Spielmechanik und Steuerung}\label{sec:orpheus_mechanik}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ORPHEUS – SPIELMECHANIK %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Spielmechanik}\label{sec:orpheus_mechanik}
 Einige der oben genannten Dokumente befassen sich im weitesten Sinne mit spielmechanischen und steuerungsbezogenen Fragen, nämlich weite Teile von \enquote{Orpheus -- Interface} sowie die Notizen zur Kampfsteuerung.
 Auch im Konvolut \enquote{Orpheus. B -- Scribbles} finden sich relevante Stichpunkte.
 \enquote{Spielmechanik} verstehe ich dabei relativ weit gefasst als die Menge an Möglichkeiten, die Spieler:innen zur Verfügung steht, um mit Spielelementen interagieren zu können.\autocite[255]{jaervinen_games_2008}
 Diese Möglichkeiten lassen sich in der Regel, wie wir unten sehen werden, durch Verben beschreiben.\autocite[263]{jaervinen_games_2008}
 
-Wir werfen zuerst einen Blick auf einige generelle Überlegungen dazu, was es im Spiel geben sollte ().
-Anschließend werden wir uns der Steuerung widmen, bevor wir...
+Wir werfen zuerst einen Blick darauf, welche Möglichkeiten Spieler:innen geboten werden sollten (\autoref{sec:orpheus_mechanik_möglichkeiten}) und schauen uns anschließend an, wie sich das Ganze hätte steuern lassen sollen (\autoref{sec:orpheus_mechanik_steuerung}).
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ORPHEUS – SPIELMECHANIK UND STEUERUNG – ENTSCHEIDUNGEN %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ORPHEUS – SPIELMECHANIK – MÖGLICHKEITEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Spielerische Möglichkeiten}\label{sec:orpheus_mechanik_möglichkeiten}
-Bei \enquote{\uline{\textsc{Orpheus} -- Interface}} handelt es sich um sieben mit (blauem) Kugelschreiber und (ursprünglich wahrscheinlich schwarzem, mittlerweile eher ins Braune tendierendem) Fineliner handbeschriebene Seiten,\footnote{Hinter dieser Überschrift ist mit rotem Fineliner -- wahrscheinlich von späterer Hand -- der Hinweis \enquote{V1} ergänzt worden. Anders als bei \enquote{\textsc{Orpheus} -- Spielwelt/Gildensystem} ist hier aber keine zweite Version erhalten.} auf denen einige grundlegende Designentscheidungen festgehalten sind.
-Auf der ersten Seite\autocite[Vgl.][S.~1]{orpheus_interface} begegnen uns an oberster Stelle drei nummerierte Stichpunkte:
+Bei \enquote{\uline{\textsc{Orpheus} -- Interface}} handelt es sich um sieben mit (blauem) Kugelschreiber und (ursprünglich wahrscheinlich schwarzem, mittlerweile eher ins Braune tendierendem) Fineliner handbeschriebene Seiten.\footnote{Hinter dieser Überschrift ist mit rotem Fineliner -- wahrscheinlich von späterer Hand -- der Hinweis \enquote{V1} ergänzt worden. Anders als bei \enquote{\textsc{Orpheus} -- Spielwelt/Gildensystem} ist hier aber keine zweite Version erhalten.}
+Auf der ersten Seite\autocite[Vgl.][S.~1]{orpheus_interface} begegnen uns an oberster Stelle drei nummerierte Stichpunkte mit grundlegende Designentscheidungen:
 \enquote{\uline{Outside View Only}},\footnote{Das steht in Konflikt mit den Ausführungen unter \enquote{\uline{Spielansicht}} in der \enquote{Zusammenfassung}, wonach auch eine Egoperspektive vorgesehen war (siehe \autoref{sec:orpheus_darstellung_kamera}).} \enquote{\uline{Tastatur Only} (evtl Maus Inventory \& \enquote{\uline{Fernklick}} Unterstützung)} sowie \enquote{Items = VOBs}.\footnote{\enquote{VOB} steht hier für \enquote{Virtuelles Objekt}; zur Rolle von VOBs bei Gothic \autocite[vgl.][]{wiki_vob}.}
 Alle drei Punkte haben sich als für die Entwicklung von Gothic maßgeblich herausgestellt:
-Den Namenlosen Helden sehen wir immer aus der Third-Person-Perspektive, die Steuerung unterstützt zwar Mauseingabe, bleibt in der Hauptsache aber auf die Tastatur fokussiert, und alle Gegenstände, die wir in der Spielwelt finden können, sind in der Engine als virtuelle Objekte angelegt.
+Den Namenlosen Helden sehen wir immer aus der Ferfolgerperspektive, die Steuerung unterstützt zwar Mauseingabe, bleibt in der Hauptsache aber auf die Tastatur fokussiert, und alle Gegenstände, die wir in der Spielwelt finden können, sind in der Engine als virtuelle Objekte angelegt.
 
-Unter diesen drei wegweisenden Stichpunkten folgt eine von (a) bis (p) reichende Liste mit Dingen, die es im Spiel geben sollte:
-\enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{Springen}, \enquote{Türen öffnen/Truhe öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.\autocite[S.~1]{orpheus_interface}
+Unter diesen drei wegweisenden Stichpunkten folgt dann eine von (a) bis (p) reichende Liste mit Möglichkeiten, die Spieler:innen haben sollten:
+\enquote{div[erse] Schläge}, \enquote{Zielen \& Schießen}, \enquote{Spell Selection}, \enquote{klettern}, \enquote{Springen}, \enquote{Türen öffnen/Truhe öffnen}, \enquote{Schloß knacken}, \enquote{ansehen}, \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken}, \enquote{Battle Mode}, \enquote{reden}, \enquote{aufheben}, \enquote{Inventory} und \enquote{weglegen}.
 Das meiste davon ist am Ende auch umgesetzt worden; nur bei vier Punkten -- \enquote{VOB verschieben}, \enquote{in VOB verstecken}, \enquote{Party NSC lenken} und \enquote{Battle Mode} -- gibt es nennenswerte Abweichungen.
 
-Nachdem Mike Hoge sich zu dieser Zeit noch die Frage \enquote{sollen \uline{alle} mögl. \uline{verschiebbar} sein?}\autocite[S.~3]{orpheus_interface} notiert hatte, ist \enquote{VOB verschieben} im fertigen Spiel -- wenn überhaupt -- nur noch als einzelnes, für Spieler*innen irrelevantes Artefakt vorhanden:
+Nachdem Mike Hoge sich zu dieser Zeit noch die Frage \enquote{sollen \uline{alle} mögl. \uline{verschiebbar} sein?}\autocite[S.~3]{orpheus_interface} notiert hatte, ist \enquote{VOB verschieben} im fertigen Spiel -- wenn überhaupt -- nur noch als einzelnes, für Spieler:innen irrelevantes Artefakt vorhanden:
 In der Klosterruine gibt es eine freistehende Säule, die sich zwar nicht wirklich verschieben, aber zumindest umwerfen lässt -- wobei sie dann auch noch in die falsche Richtung fällt.
 Es scheint offensichtlich, das sie als improvisierte Brücke zur Überwindung eines Abgrunds dienen sollte.
 Statt über den Abgrund fällt sie aber, wenn man sie umstößt, vom Abgrund fort.
@@ -305,10 +304,10 @@ An die Idee, zum Beispiel einen \enquote{Schrank [$\ldots$] verschieben}\autocit
 
 Ähnlich sieht es für den Stichpunkt \enquote{in VOB verstecken} aus:
 Vereinzelt finden wir in der Spielwelt noch Fässer\footnote{Ein Objekt, das uns an verschiedenen Stellen in den Notizen begegnet, vgl. \autocite[S.~19]{orpheus_b_scribbles}, \autocite[S.~6]{orpheus_interface}.} -- eines im Alten Lager und zwei in der Alten Miene --, in denen sich unser Namenloser Held verstecken kann.
-Eine spielmechanische Funktion erfüllen sie aber nicht.
+Eine darüberhinausgehende spielrelevante Funktion erfüllen sie aber nicht.
 
 Bei Gothic steht außerdem nur eine Spielfigur im Fokus und damit keine klassische Party, die sich aus verschiedenen Charakteren zusammensetzt.
-Zwar gibt es vereinzelt Begleiter, mit denen man kurzfristig gemeinsam durch die Spielwelt streifen kann, steuern lassen sich diese allerdings -- wenn man von dem Zauber »Kontrolle« einmal absieht -- nicht. % Memo: Prüfen, ob das geht. %
+Zwar gibt es vereinzelt Begleiter, mit denen man kurzfristig gemeinsam durch die Spielwelt streifen kann, steuern lassen sich diese allerdings -- wenn man von dem Zauber \enquote{Kontrolle} einmal absieht -- nicht. % Prüfen, ob das geht
 \enquote{Party NSC lenken} ist im Laufe der Entwicklung also auch unter den Tisch gefallen.
 Darauf, dass die Möglichkeit einer Party aber ernsthaft in Erwägung gezogen wurde, deuten einige weitere Notizen in \enquote{Orpheus -- Interface} hin.
 \enquote{Bis zu 4 Party NSCs}\footnote{\autocite[S.~5]{orpheus_interface}. An anderer Stelle ist von \enquote{2 Slots (1 + 1)} die Rede (\autocite[S.~7]{orpheus_b_scribbles}).} sollte es geben.
@@ -322,7 +321,7 @@ Eine dritte Option, nämlich ihn \enquote{\sout{Fliehe}[n]} zu lassen, ist hier 
 Die Partymitglieder \enquote{kämpfen bis 15\%} ihrer Lebensenergie, hätten aber \enquote{\uline{Keine} selbstständige Aggression gegen andere NSCs}.
 Über einen \enquote{General Button} schließlich hätte sich ein \enquote{Kriegsrat} der Party einberufen lassen sollen.
 Diese Befehle hätten sich wahrscheinlich jeweils auf ein einziges Mitglied der Gruppe beziehen sollen.
-Darauf könnte zum einen hindeuten, dass die Notiz so aussieht, als sollten die drei Buttons unter dem Balken für Lebensenergie erscheinen, der überlicherweise erscheint, wenn man sich einem NSC (oder einem Monster) zuwendet.
+Darauf könnte zum einen hindeuten, dass die Notiz so aussieht, als sollten die drei Buttons unter dem Balken für Lebensenergie erscheinen, der üblicherweise erscheint, wenn man sich einem NSC (oder einem Monster) zuwendet.
 Außerdem sind zwei weitere -- danach wieder durchgestrichene -- Ideen für einen \enquote{\sout{General Button 2}} sowie einen \enquote{\sout{General Button 3}} notiert.
 Mit ersterem hätte man zwischen \enquote{\sout{Alle Warten/Alle Folgen/Alle Kampf}} und mit zweiterem zwischen \enquote{\sout{Kampf/Alle Still}} umschalten können sollen;\autocite[S.~5]{orpheus_interface} \enquote{General} scheint sich also immer auf die ganze Gruppe zu beziehen.
 
@@ -352,6 +351,11 @@ Zentral ist bei den dort festgehaltenen Überlegungen die Distanz zum Gegner und
 In einer Tabelle ist minutiös festgehalten, welche Art von Angriff welche Auswirkungen auf einen Gegner in welcher Distanz haben soll.\footnote{Vgl. \autocite[S.~4--5]{orpheus_kampfsteuerung}.}
 Dabei wird unterschieden zwischen vier für den Nahkampf relevanten Distanzen, vier möglichen Tastatureingaben (\enquote{\textsc{Ctrl}} in Kombination mit \enquote{$\uparrow$}, \enquote{$\rightarrow$}, \enquote{$\leftarrow$} oder \enquote{$\downarrow$}) sowie einem Angriff mit der \enquote{Faust} oder mit einer von drei Waffen (\enquote{Dolch}, \enquote{Schwert} und \enquote{Zweihänder}), mit denen man entweder geübt oder ungeübt sein kann, was in einer Tabelle mit immerhin 112 Zellen resultiert.\autocite[S.~4]{orpheus_kampfsteuerung}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ORPHEUS – SPIELMECHANIK – STEUERUNG %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Steuerung}\label{sec:orpheus_mechanik_steuerung}
 Im fertigen Spiel machen wir uns durch Drücken der Leertaste Kampfbereit.
 Diese Idee ist schon in \enquote{Orpheus -- Interface} angelegt, wo notiert ist, dass durch einmaliges Drücken das Schwert gezogen und durch zweimaliges Drücken der Bogen bereit gemacht werden sollte.\autocite[S.~2]{orpheus_interface}
 Mit gezogener Waffe (oder gehobenen Fäusten, wenn wir keine Waffe ausgerüstet haben) können wir dann durch die Steuerungstaste (kurz Strg) im Kombination mit W, A oder D angreifen, während uns Strg und S blocken lässt.
