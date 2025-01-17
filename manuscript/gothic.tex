@@ -81,6 +81,9 @@ Zeilen- oder Seitenwechsel werden dagegen nicht ausgewiesen.
 Worttrennungen am Zeilenende werden entsprechend aufgelöst und Trennzeichen getilgt.
 Auch Textfarben werden -- außer bei Erwähnung in Handschriften- oder Dokumentenbeschreibung -- nicht ausgewiesen.
 
+Ich versuche, das Quellenmaterial möglichst für sich sprechen zu lassen, weswegen ich zahlreich daraus zitiere.
+Um den Fußnotenapparat nichtsdestotrotz möglichst schlank halten zu können, weise ich nicht jedes einzelne Zitat mit genauer Fundstelle aus, solange deutlich ist, aus welchem Archivdokument es stammt.
+
 
 %%%%%%%%%%%%%%
 % WILLKOMMEN %
@@ -314,12 +317,13 @@ Abschließend schauen wir uns exemplarisch an, welche Elemente des fertigen Spie
 Drei der oben genannten Schriftstücke befassen sich mit Überlegungen zur Darstellung des Spiels:
 \enquote{\uline{\textsc{Orpheus -- Bewegungen}}}, \enquote{\uline{\textsc{Orpheus} -- Interface}} sowie das Überbleibsel aus der \enquote{Zusammenfassung}.
 
-Die \enquote{\uline{\textsc{Bewegungen}}} umfassen eine mit Bleistift beschriebene Blankoseite, vermutlich im Blattformat A4, sowie drei karierte Seiten, die größtenteils wohl mit (ursprünglich wahrscheinlich schwarzem, mittlerweile eher ins Braune tendierendem) Fineliner beschrieben sind.
+Die \enquote{\uline{\textsc{Bewegungen}}}\autocite[Vgl.][]{orpheus_bewegungen} umfassen eine mit Bleistift beschriebene Blankoseite, vermutlich im Blattformat A4, sowie drei karierte Seiten, die größtenteils wohl mit (ursprünglich wahrscheinlich schwarzem, mittlerweile eher ins Braune tendierendem) Fineliner beschrieben sind.
 Von späterer Hand stammen Hinzufügungen mit rotem und blauem Stift sowie Bleistift.
 
-Das \enquote{\uline{Interface}} besteht aus sieben mit (blauem) Kugelschreiber und (wiederum ursprünglich wahrscheinlich schwarzem) Fineliner handbeschriebenen Seiten.\footnote{Hinter der Überschrift ist mit rotem Fineliner von späterer Hand der Hinweis \enquote{V1} ergänzt worden. Anders als bei \enquote{\textsc{Orpheus} -- Spielwelt/Gildensystem} ist hier aber keine zweite Version erhalten.}
+Das \enquote{\uline{Interface}}\autocite[Vgl.][]{orpheus_interface} besteht aus sieben mit (blauem) Kugelschreiber und (wiederum ursprünglich wahrscheinlich schwarzem) Fineliner handbeschriebenen Seiten.
+Hinter der Überschrift ist mit rotem Fineliner von späterer Hand der Hinweis \enquote{V1} ergänzt worden. Anders als bei \enquote{\textsc{Orpheus} -- Spielwelt/Gildensys\-tem} ist hier aber keine zweite Version erhalten.
 
-Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} schließlich ist nur ein dreiseitiger, am Computer verfasster Teil zu \enquote{\uline{Graphiken}} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spielansicht}}, \enquote{\uline{Spielfigurenanimation}}, \enquote{\uline{Getrennt animierte GAMS}}, \enquote{\uline{Diverse Mashes}}, \enquote{\uline{Texturen}} sowie \enquote{\uline{Evtl. User\-Controlled-Online-Animation}}.
+Aus der \enquote{Zusammenfassung zum Orpheus-Konzept} schließlich ist nur ein dreiseitiger, am Computer verfasster Teil zu \enquote{\uline{Graphiken}}\autocite[Vgl.][]{orpheus_zusammenfassung} erhalten, der seinerseits unterteilt ist in die Abschnitte \enquote{\uline{Spielansicht}}, \enquote{\uline{Spielfigurenanimation}}, \enquote{\uline{Getrennt animierte GAMS}}, \enquote{\uline{Diverse Mashes}}, \enquote{\uline{Texturen}} sowie \enquote{\uline{Evtl. User\-Controlled-Online-Animation}}.
 Am Ende ergänzt um mit Bleistift gezeichnete Skizzen.
 
 Auf diesen Seiten finden wir unter anderem Informationen hinsichtlich geplanter Kameraperspektiven (\autoref{sec:orpheus_darstellung_kamera}), technischer Überlegungen zu Animationen (\autoref{sec:orpheus_darstellung_animation}), des von ihnen abgebildeten Bewegungsumfangs (\autoref{sec:orpheus_darstellung_bewegungsumfang}), der Realisation einer hohen Figurenvielfalt (\autoref{sec:orpheus_darstellung_figurenvielfalt}) sowie der Umsetzung des Inventars (\autoref{sec:orpheus_darstellung_inventar}).
@@ -329,7 +333,7 @@ Auf diesen Seiten finden wir unter anderem Informationen hinsichtlich geplanter 
 % ORPHEUS – DARSTELLUNG – KAMERA %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Kamera}\label{sec:orpheus_darstellung_kamera}
-In der \enquote{Zusammenfassung} ist unter der Überschrift \enquote{\uline{Spielansicht}}\autocite[Vgl.][S.~1]{orpheus_zusammenfassung} festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
+In der \enquote{Zusammenfassung} ist unter der Überschrift festgehalten, dass zu dieser Zeit insgesamt drei verschiedene Kameraperspektiven vorgesehen waren.
 Während des Spielens hätten Spieler*innen frei zwischen Ego- und Verfolgerperspektive wählen können sollen, wobei für letztere vorgesehen war, dass sich die Kamera etwa fünf Meter hinter der Spielfigur befindet und mit Wänden kollidiert:
 \enquote{Steht die Figur mit dem Rücken zur Wand, sieht ihr die Kamera über die Schulter. Geht die Figur jetzt los[,] so folgt ihr die Kamera erst wieder, wenn die Figur 5m entfernt ist.}
 Eine dritte Variante war für den \enquote{Kampfmodus} (siehe auch \autoref{sec:orpheus_mechanik}) vorgesehen:
@@ -343,7 +347,7 @@ Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $
 % ORPHEUS – DARSTELLUNG – ANIMATION %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Animation}\label{sec:orpheus_darstellung_animation}
-Jede (menschliche) Figur, erfahren wir in der \enquote{Zusammenfassung} unter \enquote{\uline{Spiel\-figurenanimation}},\autocite[Vgl.][S.~1]{orpheus_zusammenfassung} sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden sollten.
+Jede (menschliche) Figur, erfahren wir in der \enquote{Zusammenfassung} unter \enquote{\uline{Spiel\-figurenanimation}}, sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden sollten.
 Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße}.
 Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben, wobei die schraffierten Flächen die Anschlusspunkte darstellen.
 Jede Animationsphase einer solchen Figur sollte \enquote{aus einem Gelenk-Animations-Modell (\textbf{GAM})} bestehen, das sich aus \enquote{19 Raumkoordinaten} sowie \enquote{15 Limbvektoren} zusammensetzt, wobei gelten sollte: \enquote{Jede Koordinate legt eine Gelenkverbindung zwischen zwei Limbs fest.}
@@ -351,7 +355,7 @@ Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate 
 Dargestellt ist das in \autoref{fig:orpheus_spielfigurenanimation} unten links.
 Die insgesamt 15 Limbs sind hier über 14 Gelenkverbindungen miteinander verknüpft.
 Um auf die 19 -- beziehungsweise mit gezogener Waffe 20 -- Raumkoordinaten zu kommen, braucht es also mehr als nur die Gelenkverbindungen zwischen den Limbs.
-Tatsächlich kommen, wie aus der Abbildung deutlich wird,\autocite[Vgl.][S.~3]{orpheus_zusammenfassung} bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Höchster Kopfpunkt}.
+Tatsächlich kommen, wie aus der Abbildung deutlich wird, bei Händen, Füßen und Kopf jeweils zusätzliche Punkte hinzu, nämlich \enquote{Zehen}, \enquote{Handfläche} sowie \enquote{Höchster Kopfpunkt}.
 Im Spiel sollte die Figur dann \enquote{aus GAM und Limbs \textbf{zusammengesetzt}} werden.
 Als \enquote{\uline{Vorteile}} führt Mike Hoge auf:
 
@@ -361,7 +365,7 @@ Als \enquote{\uline{Vorteile}} führt Mike Hoge auf:
    Es ist möglich, einer Spielfigur den Kopf abzuhacken, so daß er lustig durch die Gegend fliegt.
 \end{quote}
 
-Unter \enquote{\uline{Getrennt animierte GAMS}}\autocite[Vgl.][S.~2]{orpheus_zusammenfassung} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.
+Unter \enquote{\uline{Getrennt animierte GAMS}} ist notiert, dass ein Gelenk-Animations-Modell aus vier einzelnen Segmenten bestehen sollte: (1) \enquote{Beine und Unterleib}, (2) \enquote{Oberkörper und Kopf} sowie (3) \enquote{rechter Arm (Aktionsarm)} und \enquote{linker Arm (passiver Arm)}.
 Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
 
 \begin{quote}
@@ -372,7 +376,7 @@ Auch dieses Vorgehen bringt einige \enquote{\uline{Vorteile}} mit sich:
    Der modulare Zusammenbau dieser Animationssequenzen verhindert einen GAM-Overkill, da angestrebt wird, Waffen in der Hand auch im Outsideview darzustellen.\footnote{Die Durchstreichung ist nachträglich handschriftlich erfolgt.}
 \end{quote}
 
-Über den letzten animationsbezogenen Punkt, der am Ende der \enquote{Zusammenfassung} steht, die \enquote{\uline{User-Controlled-Online-Animation}},\autocite[Vgl.][S.~3]{orpheus_zusammenfassung} gibt das Dokument keinen Aufschluss mehr. % Mike Hoge fragen.
+Über den letzten animationsbezogenen Punkt, der am Ende der \enquote{Zusammenfassung} steht, die \enquote{\uline{User-Controlled-Online-Animation}}, gibt das Dokument keinen Aufschluss mehr. % Mike Hoge fragen.
 Es endet mit dem in Klammern gesetzten Kommentar: \enquote{hierzu später mehr, ich muß jetzt Tombraider [sic] spielen}.
 Der erste Teil der Tomb-Raider-Serie war keine zwei Monate vorher erschienen, am 25. Oktober 1996.
 
@@ -389,18 +393,18 @@ Der erste Teil der Tomb-Raider-Serie war keine zwei Monate vorher erschienen, am
 % ORPHEUS – DARSTELLUNG – BEWEGUNGSUMFANG %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bewegungsumfang}\label{sec:orpheus_darstellung_bewegungsumfang}
-Auf der ersten Seite von \enquote{Orpheus -- Bewegungen} finden wir insgesamt 17 Spiegelstriche mit geplanten Animationen und der Information, in wieviele Phasen diese jeweils unterteilt sein sollten.\footnote{Vgl. \autocite[S.~1]{orpheus_bewegungen}. Einen Vergleich zu den im fertigen Spiel enthaltenen Animationen ermöglicht die \textit{Marvin-Datenbank}, deren Zweck es ist, den Testmodus von Gothic (den sogenannten \textit{Marvin Mode}) zu dokumentieren (vgl. \autocite{sillus_marvin}).}
+Auf der ersten Seite von \enquote{Orpheus -- Bewegungen} finden wir insgesamt 17 Spiegelstriche mit geplanten Animationen und der Information, in wieviele Phasen diese jeweils unterteilt sein sollten.\footnote{Einen Vergleich zu den im fertigen Spiel enthaltenen Animationen ermöglicht die \textit{Marvin-Datenbank}, deren Zweck es ist, den Testmodus von Gothic (den sogenannten \textit{Marvin Mode}) zu dokumentieren (vgl. \autocite{sillus_marvin}).}
 An oberster Stelle steht beispielsweise \enquote{Einhand Angriff × [2] (7 Pha)}.
 Geplant waren also vermutlich zwei Varianten eines Angriffs mit einer einhändig geführten Waffe (vielleicht ein Streich von links nach rechts und ein zweiter von rechts nach links), die jeweils sieben Animationsphasen umfassen sollten.
 Daneben gibt es hier unter anderem \enquote{Zweihand Angriff}, \enquote{Armbrust}, \enquote{Bogen}, \enquote{getroffen werden} und \enquote{umfallen}, \enquote{mag. offensiv} und \enquote{mag. defensiv} sowie \enquote{stehen}, \enquote{gehen}, \enquote{geduckt gehen}, \enquote{rennen}, \enquote{klettern}, \enquote{Schwimmen} und \enquote{Springen (gehend wie stehend)}, aber auch \enquote{rennend}.
 
-Auf den folgenden -- wahrscheinlich später entstandenen -- drei Seiten wird diese Liste dann unter anderem um \enquote{Dialoggesten} ergänzt und wesentlich ausdifferenziert, insbesondere für Kampfanimationen und Bewegungen mit gezogener Waffe.\autocite[Vgl.][S.~2--4]{orpheus_bewegungen}
+Auf den folgenden -- wahrscheinlich später entstandenen -- drei Seiten wird diese Liste dann unter anderem um \enquote{Dialoggesten} ergänzt und wesentlich ausdifferenziert, insbesondere für Kampfanimationen und Bewegungen mit gezogener Waffe.
 Hier tauchen dann neben dem Ziehen der Waffe (\enquote{Draw}, \enquote{Bogen ziehen}, \enquote{Armbrust anlegen}) sowie der \enquote{At[tacke]} und der \enquote{Pa[rade]} unter anderem auch \enquote{Kür}, \enquote{Unterschläge} sowie \enquote{Ruhehaltung} beziehungsweise \enquote{Standpose} auf und das Bewegungsrepertoire wird um das Umdrehen (\enquote{Turn}) sowie um Seitwärtsbewegungen (\enquote{Strafe}) erweitert.
 Ein Stichwort fällt besonders ins Auge:
 An drei Stellen notiert Mike Hoge \enquote{Threaten \& Kill, Xena-Move}.
 Dabei bezieht er sich vermutlich auf die kampferprobte Protagonistin der zwischen 1995 und 2001 gedrehten Fernsehserie \textit{Xena -- Die Kriegerprinzessin}, wobei nicht klar ist, welcher ihrer \enquote{Moves} hier gemeint ist. % Mike Hoge fragen.
 
-Eine ähnliche Auflistung geplanter Animationen finden wir in der \enquote{Zusammenfassung} am Ende des Abschnitts zur \enquote{\uline{Spielfigurenanimation}} (siehe \autoref{sec:orpheus_darstellung_animation}).\autocite[Vgl.][S.~1\,f.]{orpheus_zusammenfassung}
+Eine ähnliche Auflistung geplanter Animationen finden wir in der \enquote{Zusammenfassung} am Ende des Abschnitts zur \enquote{\uline{Spielfigurenanimation}} (siehe \autoref{sec:orpheus_darstellung_animation}).
 Dort gibt es eine Liste, in der insgesamt 48 \enquote{\textit{Geplante Menschenanimationen}} aufgeführt werden:
 \enquote{stehen}, \enquote{gehen}, \enquote{rennen}, \enquote{strafen}, \enquote{rückwärts gehen}, \enquote{umdrehen}, \enquote{ducken}, \enquote{im Stand springen}, \enquote{nach vorne springen}, \enquote{rennend springen}, \enquote{an Wand klettern}, \enquote{an Seil klettern}, \enquote{seitlich klettern}, \enquote{an Vorsprung hochziehen}, \enquote{an Vorsprung herunterlassen}, \enquote{getroffen werden}, \enquote{getroffen stürzen}, \enquote{wieder aufstehen}, \enquote{Axt vom Rücken nehmen}, \enquote{Schwert ziehen}, \enquote{schwimmen}, \enquote{tauchen}, \enquote{Gegenstand ablegen}, \enquote{Gegenstand aufnehmen}, \enquote{geben und nehmen}, \enquote{Tür öffnen und schließen}, \enquote{umsehen}, \enquote{Faustschlag}, \enquote{Treten}, \enquote{werfen}, \enquote{schleudern}, \enquote{Schwertstreich}, \enquote{zweihändiger Schwertstreich}, \enquote{Schildparade}, \enquote{linker Schwertstreich}, \enquote{Befreiungsschlag}, \enquote{Drehschlag (Kopf ab)}, \enquote{Bogenschießen}, \enquote{Armbrustschießen}, \enquote{tödlicher Pfeil}, \enquote{tödlicher Hieb}, \enquote{offensive Magie}, \enquote{defensive Magie}, \enquote{fliegen}, \enquote{geduckt gehen}, \enquote{kriechen}, \enquote{von Stand in Hocke} und \enquote{von Hocke auf Boden}.
 Auch hier finden wir stellenweise -- nachträglich mit einem Bleistift ergänzt -- Informationen zu den geplanten Animationsphasen; neben dem \enquote{Schwertstreich} ist beispielsweise -- konsistent mit dem \enquote{Einhand Angriff} in \enquote{Orpheus -- Bewegungen} -- eine \enquote{7} notiert.
@@ -410,7 +414,7 @@ Auch hier finden wir stellenweise -- nachträglich mit einem Bleistift ergänzt 
 % ORPHEUS – DARSTELLUNG – FIGURENVIELFALT %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Figurenvielfalt}\label{sec:orpheus_darstellung_figurenvielfalt}
-In der \enquote{Zusammenfassung} werden unter den Überschriften \enquote{\uline{Diverse Meshes}} und \enquote{\uline{Texturen}} Ideen aufgeführt, die die technisch effiziente Ermöglichung einer möglichst große Figurenvielfalt behandeln.\autocite[Vgl.][S.~2\,f.]{orpheus_zusammenfassung}
+In der \enquote{Zusammenfassung} werden unter den Überschriften \enquote{\uline{Diverse Meshes}} und \enquote{\uline{Texturen}} Ideen aufgeführt, die die technisch effiziente Ermöglichung einer möglichst große Figurenvielfalt behandeln.
 
 Zunächst sollten, wie wir unter \enquote{\uline{Diverse Meshes}} erfahren, die als Meshes abgespeicherten Limbs (siehe \autoref{sec:orpheus_darstellung_animation}) in verschiedenen Formen verfügbar sein und sich beliebig am Gelenk-Animations-Modell kombinieren lassen:
 \enquote{Jedes Limb-Mesh kommt in mehreren Ausführungen vor.
@@ -444,7 +448,7 @@ Bei den Texturen für andere Limbs wäre das vernachlässigbar: \enquote{Beim Ob
 % ORPHEUS – DARSTELLUNG – INVENTAR %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Inventar}\label{sec:orpheus_darstellung_inventar}
-Während sich der Großteil von \enquote{\uline{\textsc{Orpheus} -- Interface}} mit Fragen der spielerischen Möglichkeiten sowie der Steuerung befasst (siehe \autoref{sec:orpheus_mechanik_möglichkeiten}), gewährt die letzte der sieben Seiten Einblick in eine frühe Vision des Inventars.\footnote{Vgl. \autocite[S.~7]{orpheus_interface}. Bereits auf der vorherigen Seite wird eine Reihe kleinerer Raster dargestellt, bei denen es sich um verschiedene Ideen für ein Inventar handeln könnte.}
+Während sich der Großteil von \enquote{\uline{\textsc{Orpheus} -- Interface}} mit Fragen der spielerischen Möglichkeiten sowie der Steuerung befasst (siehe \autoref{sec:orpheus_mechanik_möglichkeiten}), gewährt die letzte der sieben Seiten Einblick in eine frühe Vision des Inventars.\footnote{Bereits auf der vorherigen Seite wird eine Reihe kleinerer Raster dargestellt, bei denen es sich um verschiedene Ideen für ein Inventar handeln könnte.}
 Drei kleine, untereinander gezeichnete und von \enquote{1} bis \enquote{3} nummerierte Skizzen (siehe \autoref{fig:orpheus_inventar} oben) illustrieren hier den Übergang von der Spiel- zur Inventar\-ansicht.
 Den Ausgangspunkt bildet die erste Skizze, in der wir die Spielfigur aus der Verfolgerperspektive (siehe \autoref{sec:orpheus_darstellung_kamera}) im Zentrum des Bildschirms sehen.
 In der zweiten Skizze wird dann die \enquote{Inventory-Anim[ation]} dargestellt; beim Öffnen des Inventars hätte sich die Kamera in einem Halbkreis um die Spielfigur herum bewegen sollen, so dass man sie am Ende von vorne sieht.
