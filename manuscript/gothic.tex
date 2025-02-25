@@ -1,4 +1,4 @@
-\documentclass[a5paper,pagesize]{scrbook}
+\documentclass[a5paper,pagesize,numbers=noenddot]{scrbook}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -34,6 +34,7 @@
 \deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
    \setlength{\skip\footins}{1.5em}
    \setlength{\footnotesep}{1em}
+
 
 \title{Gothic}
 \subtitle{}
@@ -426,7 +427,8 @@ Während des Spielens hätten Spieler:innen frei zwischen Ego- und Verfolgerpers
 Eine dritte Variante war für den \enquote{Kampfmodus} (siehe auch \autoref{sec:orpheus_mechanik}) vorgesehen:
 
 \begin{quote}
-Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt. Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.
+Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $[\dots]$, so dreht sich die Kamera 90$^\circ$ gegen den Uhrzeigersinn. Die Kontrahenten werden jetzt von der Seite gezeigt.
+Ist der Kampf vorbei, so sieht man die Figur wieder von hinten.
 \end{quote}
 
 
@@ -436,7 +438,7 @@ Ist die Figur im Kampfmodus $[\dots]$ und ist sie in Reichweite eines Monsters $
 \subsection{Animation}\label{sec:orpheus_darstellung_animation}
 Jede (menschliche) Figur, erfahren wir in der \enquote{Zusammenfassung} unter \enquote{\uline{Spiel\-figurenanimation}}, sollte aus 15 sogenannten \enquote{\textbf{Limbs}} bestehen, \enquote{einzelnen starren Körperbestandteilen}, die jeweils \enquote{als ein festes Drahtgittermodell [abgespeichert]} und über \enquote{\textit{Anschlußpunkte}} miteinander verbunden werden sollten.
 Vorgesehen waren dafür \enquote{Kopf, Oberkörper, Unterleib, 2 Oberarme, 2 Unterarme, 2 Hände, 2 Oberschenkel, 2 Unterschenkel, 2 Füße}.
-Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben, wobei die schraffierten Flächen die Anschlusspunkte darstellen.
+Visualisiert ist das in \autoref{fig:orpheus_spielfigurenanimation} oben (siehe \autoref{ch:anhang_abbildungen}), wobei die schraffierten Flächen die Anschlusspunkte darstellen.
 Jede Animationsphase einer solchen Figur sollte \enquote{aus einem Gelenk-Animations-Modell (\textbf{GAM})} bestehen, das sich aus \enquote{19 Raumkoordinaten} sowie \enquote{15 Limbvektoren} zusammensetzt, wobei gelten sollte: \enquote{Jede Koordinate legt eine Gelenkverbindung zwischen zwei Limbs fest.}
 Hält die Figur eine Waffe in der Hand, sollte eine zusätzliche Raumkoordinate an deren äußerem Ende (beispielsweise der \enquote{Schwertspitze}) sowie ein zusätzlicher Waffenvektor hinzukommen.
 Dargestellt ist das in \autoref{fig:orpheus_spielfigurenanimation} unten links.
@@ -755,7 +757,9 @@ Es wird direkt Bezug genommen auf den Sumpf, das Lager der Psioniker sowie deren
 \clearpage
 \addcontentsline{toc}{chapter}{Anhang}
 \appendix
-\section*{Abbildungen}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+\chapter{Abbildungen}\label{ch:anhang_abbildungen}
 \begin{figure}[p]
    \centering
    \fbox{\includegraphics[scale=0.5]{orpheus_spielfigurenanimation.pdf}}
