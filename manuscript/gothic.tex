@@ -678,7 +678,7 @@ Es gibt beispielsweise Überlegungen, dass die oben erwähnte Aufforderung \enqu
 Weil das unter Umständen aber zu unpraktisch sein könnte, ist dazu in Klammern eine Alternative notiert:
 \enquote{evtl Telepath. Kommunikation}.\autocite[S.~5]{orpheus_interface}
 Und was macht man, wenn sich ein Gruppenmitglied -- aber nicht der Spieler selbst -- an einem Ort aufhält, an dem etwas Wichtiges ausgelöst werden soll?
-Der etwas kryptische Vermerk \enquote{Kritische Dialoge \textsc{nicht} Triggern wenn \uline{Party} $-$ NSC $=$ \uline{Mensch}!}\autocite[S.~9]{orpheus_b_scribbles} könnte unter Umständen so gelesen werden, dass ein wichtiger Dialog nicht ausgelöst werden soll, wenn Teile der Gruppe zwar am entsprechenden Ort sind, der menschliche Spieler (\enquote{NSC = Mensch}) aber fehlt (\enquote{$-$}); wobei man freilich darüber hinwegsehen müsste, dass \enquote{NSC} eigentlich einen Charakter beschreibt, der nicht der Spieler ist.
+Der etwas kryptische Vermerk \enquote{Kritische Dialoge \textsc{nicht} Triggern wenn \uline{Party} $-$ NSC $=$ \uline{Mensch}!}\autocite[S.~9]{orpheus_b_scribbles} könnte unter Umständen so gelesen werden, dass ein wichtiger Dialog nicht ausgelöst werden soll, wenn Teile der Gruppe zwar am entsprechenden Ort sind, der menschliche Spieler (\enquote{NSC = Mensch}) aber fehlt (\enquote{$-$}); wobei man freilich darüber hinwegsehen müsste, dass \enquote{NSC} eigentlich einen Charakter beschreibt, der nicht der Spieler ist. % Mike Hoge fragen
 
 Neben \enquote{VOB verschieben}, \enquote{in VOB verstecken} und \enquote{Party NSC lenken} bleibt dann noch der \enquote{Battle Mode}, wobei nicht unmittelbar klar ist, was sich die Entwickler zu diesem Zeitpunkt darunter vorgestellt haben.
 Bei der Erwähnung eines solchen Kampfmodus mag einem zum Beispiel der unter anderem in JPRGs bis heute tradierte Kampfbildschirm in den Sinn kommen, in dem das (in der Regel rundenbasierte) Geschehen oft abstrahiert aus einem Blick von der Seite dargestellt wird, wobei sich die Kontrahenten beispielsweise am linken und rechten Rand des Bildschirms oder diagonal gegenüberstehen.\footnote{Ein frühes -- vielleicht sogar das erste -- Beispiel für eine Kampfansicht, in der sich die Parteien links und rechts gegenüberstehen, stellt das 1987 in Japan und 1990 in den Vereinigten Staaten erschienene \textit{Final Fantasy} dar. Eine diagonale Gegenüberstellung findet sich etwa in dem 1993 erschienenen \textit{Ogre Battle -- The March of the Black Queen}. Daneben gibt es noch die frontale Darstellung der Gegner, entweder aus der Egoperspektive des Spielers, wie etwa im 1986 veröffentlichten \textit{Dragon Quest}, oder über die Schulter der Spielfiguren, wie beispielsweise im 1993 erschienenen \textit{Lufia \& the Fortress of Doom}. Diese Formen eines separaten Kampfbildschirms haben sich bis heute erhalten, etwa im 2016 erschienenen \textit{Persona 5} oder im 2018 erschienenen \textit{Octopath Traveler}.}
@@ -954,9 +954,9 @@ Hier sind -- in der unteren rechten Ecke eines Blattes -- auch die Felder notier
       \item[--] gute Bez zu $\ldots$ <Gilde>
       \item[] [neutrale zu $\ldots$]
       \item[--] schlechte Bez zu $\ldots$
-      \item[--] soz. Funktion
+      \item[--] \sout{soz. Funktion}
       \item[--] Lernprogramm!
-      \item[--] Ausbruchsplan\footnote{Die eckigen Klammern zwischen dem dritten und vierten Spiegelstrich sind Bestandteil des Zitats; vermutlich wurde dieser Punkt im Nachhinein ergänzt.}
+      \item[--] \sout{Ausbruchsplan}\footnote{Die eckigen Klammern zwischen dem dritten und vierten Spiegelstrich sind Bestandteil des Zitats; vermutlich wurde dieser Punkt im Nachhinein ergänzt.}
    \end{itemize}
 \end{quote}
 
@@ -1015,7 +1015,8 @@ Greift der Spieler einen (bis dahin nichtfeindlichen) Charakter an, sollte desse
 Eine \enquote{Att[acke]} erfolgt anfangs \enquote{nur bei Buddlern und so}, während sich Meister des Kampfes damit begnügen, den Spieler zurückzuwerfen (\enquote{Knockback nur von Mastern}); ihnen ist die \enquote{Att[acke] egal} denn der Spieler ist in ihren Augen nur ein \enquote{Wurm}.
 Erholt sich ein besiegter Charakter aus seiner \enquote{Ohnmacht} (\enquote{\textsc{Dauert} 5 Min[uten,] Wecken durch \textsc{Anspr[echen]}}) oder wurde der Spieler von einem stärkeren Charakter zurückgeworfen, folgt ein \enquote{\uline{Friedensangebot!}}
 
-Sollte ein Kampf für einen Charakter stattdessen tödlich ausgehen, bleibt seine Leiche auch von anderen nicht unbeachtet.
+Sollte ein Kampf für einen Charakter stattdessen tödlich ausgehen, bleibt seine \enquote{Leiche} auch von anderen nicht unbeachtet.
+Kommt der Spieler ihnen nicht zuvor, können sie ihren \enquote{Tagesablauf ändern} und den am Boden Liegenden \enquote{\sout{plündern}}, wobei in der Programmierung darauf zu achten ist, dass sie \enquote{\uline{nicht 100 mal dieselbe Leiche fleddern}}.
 
 In \enquote{\textsc{Orpheus -- Kreaturen}} sind neben \enquote{\uline{Orks}}, \enquote{\uline{Monster[n]}}, \enquote{\uline{Greife[n]}} und \enquote{\uline{Dämonen}} unter dem Stichwort \enquote{Atmo-Creaturen} auch \enquote{Vögel} aufgeführt.
 Diese \enquote{Zwitschern} und \enquote{\textsc{Warnen} vor hidden Orks}.
@@ -1171,7 +1172,7 @@ Der Spieler hat zu warten, bis er das erste Mal von einem potentiellen Auftragge
 Erst danach ist er in der Position, seinerseits den Auftraggeber anzusprechen.}
 Andernfalls könnte es zu einem \enquote{Dialogstop durch genervten NSC} kommen, der dann \enquote{3 Stunden Ruhe} möchte (\enquote{$\hat{=}$ 10 Min[uten]}).
 Oder der Spieler hat weitere Konsequenzen zu tragen:
-\enquote{Att (minus) bei Frage\uline{orgie}} ist hier vermerkt, wobei nicht ganz klar ist, wofür \enquote{Att} steht; eventuell ist damit Attitüde gemeint, vielleicht aber auch Attribut. % Mike Hoge fragen.
+\enquote{Att (minus) bei Frage\uline{orgie}} ist hier vermerkt, wobei nicht ganz klar ist, wofür \enquote{Att} steht; eventuell ist damit Attitüde gemeint, vielleicht aber auch Attribut. % Bei Mike Hoge nachfragen.
 Auch eine ganz grundlegende Spielmechanik wird hier erwähnt:
 Mit seiner \enquote{1. Waffe} kann der Spieler losziehen und \enquote{\uline{Monster} \uline{abmetzeln}}.
 
