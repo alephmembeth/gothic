@@ -29,6 +29,7 @@
 \usepackage{tikz}
 \usepackage[normalem]{ulem}
 \usepackage{url}
+\usepackage{varwidth}
 
 \addtokomafont{disposition}{\rmfamily}
 
@@ -39,6 +40,7 @@
    \setlength{\skip\footins}{1.5em}
    \setlength{\footnotesep}{1em}
 
+\setlength{\fboxsep}{5pt}
 
 \title{Gothic}
 \subtitle{Eine Spurensuche im Archiv der Entwickler}
@@ -702,6 +704,23 @@ In \enquote{\textsc{Orpheus. B -- Scribbles}} sind neben \enquote{Mut}, \enquote
 Flosha hat sich ausführlich damit beschäftigt und schlüsselt sie wie folgt auf:
 \enquote{STR} steht für \enquote{Strength}, \enquote{Ka GE} für \enquote{Kampfgeschick}, \enquote{Di GE} für \enquote{Diebesgeschick}, \enquote{AGa} für \enquote{Arkane Gabe}, \enquote{WIL} für \enquote{Wille}, \enquote{CON} für \enquote{Constitution}, \enquote{AT} für \enquote{Attack}, \enquote{GE} für \enquote{Geschicklichkeit}, \enquote{TP} für \enquote{Trefferpunkte}, \enquote{WK} für \enquote{Waffenkunst}, \enquote{DK} für \enquote{Diebeskunst}, \enquote{LP} für \enquote{Lebenspunkte} und \enquote{WS} für \enquote{Willensstärke}.
 Außerdem weist er darauf hin, dass die Anordnung der Abkürzungen auf eine Zuordnung hindeuten könnte.\autocite[Vgl.][]{flosha_attributes_2022}
+In einem Kasten finden wir beispielsweise folgende beiden Spalten:
+
+\vspace{1em}
+\fbox{
+   \begin{varwidth}{\textwidth}
+\begin{tabular}{lcl}
+   STR     & --   & CON             \\
+   Ka GE   &      & AT              \\
+   Di GE   &      & GE              \\
+   AGa     &      & \textsc{Mana}   \\
+   WIL     &      & WIL             \\
+\end{tabular}
+   \end{varwidth}
+}
+
+\vspace{1em}
+\noindent Daneben wiederum ist notiert:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
